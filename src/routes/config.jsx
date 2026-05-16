@@ -15,7 +15,7 @@ export const routes = createBrowserRouter([
             { path: "/empleer", element: <Empleer /> },
             { path: "/supplier", element: <PageSupplier /> },
             { path: "/clients", element: <PageClients /> },
-            { path: "/login", element: <LogIn /> },
+            { path: "/login", element: <LogIn /> }, { path: "/createemp", element: <CreateEmployee /> },
         ]
     }
 ])
