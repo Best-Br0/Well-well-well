@@ -8,10 +8,58 @@ export default function UpdateEmployee() {
     const { id } = useParams();
 
     const [showPassword, setShowPassword] = useState(false);
+    const [avatarPreview, setAvatarPreview] = useState(null);
+    const [phone, setPhone] = useState("");
 
     const handleSave = (e) => {
         e.preventDefault();
         console.log("Сохраняем ID:", id);
+    };
+
+    const handleFileChange = (event) => {
+        const file = event.target.files?.[0];
+        if (file) {
+            const imageUrl = URL.createObjectURL(file);
+            setAvatarPreview(imageUrl);
+        }
+    };
+
+    const handlePhoneChange = (e) => {
+        let input = e.target.value;
+        if (!input) {
+            setPhone("");
+            return;
+        }
+
+        const digits = input.replace(/\D/g, "");
+        let cleaned = digits;
+        if (digits.startsWith("996")) {
+            cleaned = digits.slice(3);
+        }
+
+        cleaned = cleaned.slice(0, 9);
+
+        let formatted = "+996 ";
+        if (cleaned.length > 0) {
+            formatted += "(" + cleaned.slice(0, 3);
+        }
+        if (cleaned.length >= 3) {
+            formatted += ") " + cleaned.slice(3, 5);
+        }
+        if (cleaned.length >= 5) {
+            formatted += "-" + cleaned.slice(5, 7);
+        }
+        if (cleaned.length >= 7) {
+            formatted += "-" + cleaned.slice(7, 9);
+        }
+
+        setPhone(formatted);
+    };
+
+    const handlePhoneFocus = () => {
+        if (!phone) {
+            setPhone("+996 (");
+        }
     };
 
     return (
@@ -26,19 +74,29 @@ export default function UpdateEmployee() {
                     <form onSubmit={handleSave} className="employee-form">
 
                         <div className="avatar-upload-block">
-                            <div className="avatar-wrapper"><img
-                                src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
-                                alt="Profile"
-                                className="avatar-preview"
-                            />
-                                <label htmlFor="avatar-input" className="camera-badge">
+                            <div className="avatar-wrapper" style={{ position: 'relative', overflow: 'hidden' }}>
+                                <img
+                                    src={avatarPreview || "https://cdn-icons-png.flaticon.com/512/149/149071.png"}
+                                    alt="Profile"
+                                    className="avatar-preview"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
+                                <label htmlFor="avatar-input" className="camera-badge" style={{ cursor: 'pointer' }}>
                                     <IoCameraOutline />
                                 </label>
-                                <input type="file" id="avatar-input" style={{ display: 'none' }} />
+                                <input 
+                                    type="file" 
+                                    id="avatar-input" 
+                                    accept="image/*"
+                                    onChange={handleFileChange}
+                                    style={{ display: 'none' }} 
+                                />
                             </div>
                             <div className="avatar-text">
                                 <h3>Фото профиля</h3>
-                                <span className="upload-link">Загрузить новое фото</span>
+                                <span className="upload-link" onClick={() => document.getElementById('avatar-input').click()} style={{ cursor: 'pointer' }}>
+                                    {avatarPreview ? 'Изменить фото' : 'Загрузить новое фото'}
+                                </span>
                             </div>
                         </div>
 
@@ -50,7 +108,13 @@ export default function UpdateEmployee() {
 
                             <div className="input-group">
                                 <label>Телефон</label>
-                                <input type="text" placeholder="+996 (555) 12-34-56" />
+                                <input 
+                                    type="text" 
+                                    placeholder="+996 (555) 12-34-56" 
+                                    value={phone}
+                                    onChange={handlePhoneChange}
+                                    onFocus={handlePhoneFocus}
+                                />
                             </div>
 
                             <div className="input-group">
