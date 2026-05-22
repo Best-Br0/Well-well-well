@@ -1,9 +1,16 @@
+.supplier_details_main {
+    padding: 75px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
 .supplier_details {
     display: flex;
     flex-direction: column;
     gap: 22px;
     width: 100%;
-    padding: 40px;
 
     .details_title {
         font-family: var(--FontOne);

@@ -9,8 +9,10 @@ export default function DetailsSupplier() {
     return (
         <>
             <Header title={"Просмотр поставщика"} />
-            <SupplierDetails />
-            <SupplierOrders />
+            <div className="supplier_details_main">
+                <SupplierDetails />
+                <SupplierOrders />
+            </div>
         </>
     )
 }
