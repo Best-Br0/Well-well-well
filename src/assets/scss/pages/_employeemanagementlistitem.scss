@@ -1,0 +1,63 @@
+.employeemanagementlistitem {
+    width: 100%;
+    height: 85px;
+    background: transparent;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+
+    display: grid;
+    grid-template-columns: 60px 2fr 2fr 1.5fr 1.5fr 1fr;
+    gap: 20px;
+
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+
+    &_id,
+    &_name,
+    &_number {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #171A1F;
+        white-space: nowrap;
+    }
+
+    &_birth {
+        font-size: 12px;
+        font-weight: 600;
+        width: 49px;
+        height: 22px;
+        line-height: 20px;
+        color: #171A1F;
+        background: #F3F4F680;
+        border-radius: 15px;
+        white-space: nowrap;
+        text-align: center;
+        padding-top: 2px;
+    }
+
+    &_addres {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #565D6DFF;
+        white-space: nowrap;
+    }
+
+    &_actions {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 15px;
+
+        .employeemanagementlistitem_actions_box {
+            width: 30px;
+            height: 30px;
+            background: #ECFDF5FF;
+            border-radius: 4px;
+        }
+    }
+
+}
