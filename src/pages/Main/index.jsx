@@ -4,9 +4,7 @@ export default function Main() {
 
     return (
         <>
-        <Header title={"Главная"} />
-
-        / ваша страница
+        <h1>додик?</h1>
         </>
     )
 }
