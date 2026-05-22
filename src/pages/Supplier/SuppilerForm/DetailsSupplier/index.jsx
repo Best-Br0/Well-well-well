@@ -1,4 +1,4 @@
-import Header from "../../../components/Header";
+import Header from "../../../../components/Header";
 import SupplierDetails from "./components/SupplierDetails";
 import SupplierOrders from "./components/SupplierOrders";
 
