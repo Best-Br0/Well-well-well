@@ -4,7 +4,8 @@ export default function Main() {
 
     return (
         <>
-        <h1>додик?</h1>
+            <Header />
+            <h1>ваша страница с компонентами</h1>
         </>
     )
 }

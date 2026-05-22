@@ -9,7 +9,6 @@ export default function Layout() {
             <div className="body">
                 <Sidebar />
                 <div className="main">
-                    <Header />
                     <Outlet />
                 </div>
             </div>
