@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+}
+
+:root {
+    --FontOne: Manrope;
+    --TitleOne: #565D6DFF;
+    --BackgroundOne: #22C3A8FF;
+}
+
+a {
+    text-decoration: none;
+}
