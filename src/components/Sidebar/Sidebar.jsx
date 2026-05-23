@@ -1,6 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import PageItem from "./PageItem";
 
+import { SlHome } from "react-icons/sl";
+import { RxPeople } from "react-icons/rx";
+import { CiDeliveryTruck } from "react-icons/ci";
+import { RxAvatar } from "react-icons/rx";
+
 export default function Sidebar() {
 
     return (
@@ -14,10 +19,14 @@ export default function Sidebar() {
                     </div>
 
                     <div className="pages">
-                            <PageItem to={"/"} img={"LayoutDashboard"} title={"Главная"} />
-                            <PageItem to={"/main"} act={"act.ve"} img={"Users"} title={"Сотрудники"} />
-                        <PageItem img={"Truck"} title={"Поставщики"} />
-                        <PageItem img={"CircleUser"} title={"Клиенты"} />
+                        <PageItem icon={<SlHome className="page_foto" />}
+                            to={"/"} img={"LayoutDashboard"} title={"Главная"} />
+                        <PageItem icon={<RxPeople className="page_foto" />}
+                            to={"/employees"} act={"act.ve"} img={"Users"} title={"Сотрудники"} />
+                        <PageItem icon={<CiDeliveryTruck className="page_foto" />}
+                            to={"/supplier"} img={"Truck"} title={"Поставщики"} />
+                        <PageItem icon={<RxAvatar className="page_foto" />}
+                            to={"/clients"} img={"CircleUser"} title={"Клиенты"} />
                         <div className="with_pages">
                             <div className="page">
                                 <div className="content">
