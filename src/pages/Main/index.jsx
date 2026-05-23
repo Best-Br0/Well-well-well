@@ -1,4 +1,4 @@
-import EmployeeManagement from "./components/EmployeeManagement"
+import EmployeeManagement from "./EmployeeManagement"
 import Header from "../../components/Header";
 
 export default function Main() {

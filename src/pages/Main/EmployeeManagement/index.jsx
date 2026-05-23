@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../../../../components/Header'
+import Header from '../../../components/Header'
 import EmployeeManagementList from './components/EmployeeManagementList'
 import EmployeeManagementPagination from './components/EmployeeManagementPagination'
 
