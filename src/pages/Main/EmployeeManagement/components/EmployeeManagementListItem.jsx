@@ -1,4 +1,4 @@
-import Watch from "../../../../../assets/icons/watch.svg"
+import Watch from "../../../../assets/icons/watch.svg"
 import ModeOutlinedIcon from '@mui/icons-material/ModeOutlined';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
