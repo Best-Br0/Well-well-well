@@ -5,7 +5,7 @@ import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 
 export default function EmployeeManagementListItem({ id, name, addres, number, birth }) {
     return (
-        <div className='employeemanagementlistitem'>
+        <div className="employeemanagementlistitem">
             <div className='employeemanagementlistitem_id'>{id}</div>
             <div className='employeemanagementlistitem_name'>{name}</div>
             <div className='employeemanagementlistitem_addres'>{addres}</div>
