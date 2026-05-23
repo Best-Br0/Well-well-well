@@ -1,0 +1,25 @@
+.top {
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #171a1f1F, 0px 2px 5px #171a1f17;
+    width: 330px;
+    height: 476px;
+    background: #FFFFFFFF;
+    padding: 24px;
+
+    .top_five {
+        font-family: Manrope;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+        color: #171A1FFF;
+    }
+
+    .top_sales {
+        font-family: Manrope;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        padding-top: 10px;
+        color: #565D6DFF;
+    }
+}

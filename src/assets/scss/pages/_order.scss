@@ -1,0 +1,76 @@
+.home_wrapper3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    padding: 0 30px;
+
+    .order {
+        width: 520px;
+        height: 483px;
+        background: #FFFFFFFF;
+        border-radius: 10px;
+        box-shadow: 0px 0px 2px #171a1f1F, 0px 2px 5px #171a1f17;
+
+        .order_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 11px;
+            padding: 20px 24px;
+
+            .order_title {
+                font-family: Manrope;
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 600;
+                color: #171A1FFF;
+            }
+
+            .order_btn {
+                left: 389px;
+                width: 150.5px;
+                height: 36px;
+                padding: 0 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Manrope;
+                font-size: 14px;
+                line-height: 22px;
+                font-weight: 500;
+                color: #22C3A8FF;
+                background: #00000000;
+                border-radius: 6px;
+                gap: 11px;
+
+                .order_icon {
+                    color: #22C3A8FF;
+                    font-size: 21px;
+                }
+            }
+        }
+
+        .order_catefory {
+            height: 48px;
+            background: #F3F4F6FF;
+            width: 100%;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 24px;
+            border-bottom: 1px solid #DEE1E6FF;
+
+            .order_category_h5 {
+                font-family: Manrope;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 600;
+                color: #565D6DFF;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

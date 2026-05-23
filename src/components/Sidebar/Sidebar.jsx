@@ -15,7 +15,7 @@ export default function Sidebar() {
 
                     <div className="pages">
                             <PageItem to={"/"} img={"LayoutDashboard"} title={"Главная"} />
-                            <PageItem to={"/main"} act={"act.ve"} img={"Users"} title={"Сотрудники"} />
+                            <PageItem to={"/empleer"} act={"act.ve"} img={"Users"} title={"Сотрудники"} />
                         <PageItem img={"Truck"} title={"Поставщики"} />
                         <PageItem img={"CircleUser"} title={"Клиенты"} />
                         <div className="with_pages">
