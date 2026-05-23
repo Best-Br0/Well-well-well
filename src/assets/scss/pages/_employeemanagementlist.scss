@@ -82,7 +82,7 @@
         height: 53px;
         margin: 35px auto 0 auto;
         background: #00000000;
-        border-radius: 12px;
+        border-radius: 12px 12px 0 0;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
         border-bottom: 1px solid #DEE1E6FF;
 
@@ -107,5 +107,18 @@
                 justify-content: flex-end;
             }
         }
+    }
+
+    .employeemanagementlist_user {
+        border: none;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 0 2px rgba(23, 26, 31, 0.6),
+            0 17px 35px rgba(23, 26, 31, 0.15);
+    }
+
+    .employeemanagementlist_hr {
+        width: 100%;
+        border: 1px solid #DEE1E6FF;
+        margin-top: 25px;
     }
 }

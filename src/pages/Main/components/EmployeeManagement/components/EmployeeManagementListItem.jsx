@@ -1,6 +1,7 @@
 import Watch from "../../../../../assets/icons/watch.svg"
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteIcon from '@mui/icons-material/Delete';
+import ModeOutlinedIcon from '@mui/icons-material/ModeOutlined';
+import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
+import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 
 export default function EmployeeManagementListItem({ id, name, addres, number, birth }) {
     return (
@@ -11,11 +12,15 @@ export default function EmployeeManagementListItem({ id, name, addres, number, b
             <div className='employeemanagementlistitem_number'>{number}</div>
             <div className='employeemanagementlistitem_birth'>{birth}</div>
             <div className="employeemanagementlistitem_actions">
-                <img src={Watch} className="employeemanagementlistitem_watchicons" alt="" />
-                <div className="employeemanagementlistitem_actions_box">
-                    <EditIcon />
+                <div className="employeemanagementlistitem_actions_watch">
+                    <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
                 </div>
-                <DeleteIcon />
+                <div className="employeemanagementlistitem_actions_edit">
+                    <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
+                </div>
+                <div className="employeemanagementlistitem_actions_delete">
+                    <DeleteOutlineOutlinedIcon className="employeemanagementlistitem_deleteicons" />
+                </div>
             </div>
         </div>
     )

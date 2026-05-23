@@ -14,13 +14,14 @@ export default function Sidebar() {
                     </div>
 
                     <div className="pages">
-
-                        <PageItem img={"LayoutDashboard"} title={"Главная"} />
-                        <PageItem act={"active"} img={"Users"} title={"Сотрудники"} />
+                        <NavLink to={"/"}>
+                            <PageItem img={"LayoutDashboard"} title={"Главная"} />
+                        </NavLink>
+                        <NavLink to={"/main"}>
+                            <PageItem act={"act.ve"} img={"Users"} title={"Сотрудники"} />
+                        </NavLink>
                         <PageItem img={"Truck"} title={"Поставщики"} />
                         <PageItem img={"CircleUser"} title={"Клиенты"} />
-
-
                         <div className="with_pages">
                             <div className="page">
                                 <div className="content">

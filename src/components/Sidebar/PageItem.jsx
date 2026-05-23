@@ -13,5 +13,4 @@ export default function PageItem({ act, title, img }) {
             </Link>
         </>
     )
-
 }
