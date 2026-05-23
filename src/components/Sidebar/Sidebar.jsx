@@ -14,12 +14,8 @@ export default function Sidebar() {
                     </div>
 
                     <div className="pages">
-                        <NavLink to={"/"}>
-                            <PageItem img={"LayoutDashboard"} title={"Главная"} />
-                        </NavLink>
-                        <NavLink to={"/main"}>
-                            <PageItem act={"act.ve"} img={"Users"} title={"Сотрудники"} />
-                        </NavLink>
+                            <PageItem to={"/"} img={"LayoutDashboard"} title={"Главная"} />
+                            <PageItem to={"/main"} act={"act.ve"} img={"Users"} title={"Сотрудники"} />
                         <PageItem img={"Truck"} title={"Поставщики"} />
                         <PageItem img={"CircleUser"} title={"Клиенты"} />
                         <div className="with_pages">

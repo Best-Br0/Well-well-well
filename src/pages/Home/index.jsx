@@ -1,7 +1,13 @@
-import React from 'react'
+import Header from "../../components/Header"
+import Achievements from "./components/Achievements"
 
 export default function Home() {
-  return (
-    <div>Home</div>
-  )
+    return (
+        <>
+            <Header title="Главная" />
+            <div className="home_wrapper">
+                <Achievements />
+            </div>
+        </>
+    )
 }
