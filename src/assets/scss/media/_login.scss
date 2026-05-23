@@ -1,0 +1,59 @@
+@media (max-width: 390px) {
+
+    .left_side {
+        display: none;
+    }
+
+    .right_side {
+        width: 100%;
+        margin: 50px 0px;
+
+        .context {
+            gap: 24px;
+
+            .logotip {
+                .title {
+                    font-size: 31px;
+                    line-height: 31px;
+                }
+            }
+
+            .welcome {
+                gap: 12px;
+
+                .title {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 800;
+                }
+                .text {
+                    width: 240px;
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .login {
+            width: 342px;
+            padding: 25px;
+            margin: 40px 0px;
+            border-radius: 24px;
+            border: 1px solid #F1F5F9FF;
+            box-shadow: 0px 0px 2px #171a1f1F, 0px 2px 5px #171a1f17;
+        }
+
+        .details {
+            position: inherit;
+            width: 342px;   
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 24px;
+
+            span {
+                display: none;
+            }
+        }
+    }
+}
