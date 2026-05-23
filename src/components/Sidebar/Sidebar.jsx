@@ -22,7 +22,7 @@ export default function Sidebar() {
                         <PageItem icon={<SlHome className="page_foto" />}
                             to={"/"} img={"LayoutDashboard"} title={"Главная"} />
                         <PageItem icon={<RxPeople className="page_foto" />}
-                            to={"/employees"} act={"act.ve"} img={"Users"} title={"Сотрудники"} />
+                            to={"/empleer"} act={"act.ve"} img={"Users"} title={"Сотрудники"} />
                         <PageItem icon={<CiDeliveryTruck className="page_foto" />}
                             to={"/supplier"} img={"Truck"} title={"Поставщики"} />
                         <PageItem icon={<RxAvatar className="page_foto" />}

@@ -4,7 +4,7 @@ import Layout from "../Layout";
 import LogIn from "../Layout/Log";
 import PageClients from "../pages/Clients";
 import PageSupplier from "../pages/Supplier";
-import Main from "../pages/Main";
+import Empleer from "../pages/Empleer";
 
 export const routes = createBrowserRouter([
     {
@@ -12,7 +12,7 @@ export const routes = createBrowserRouter([
         element: <Layout />,
         children: [
             { index: true, element: <Home /> },
-            { path: "/employees", element: <Main /> },
+            { path: "/empleer", element: <Empleer /> },
             { path: "/supplier", element: <PageSupplier /> },
             { path: "/clients", element: <PageClients /> },
             { path: "/login", element: <LogIn /> },
