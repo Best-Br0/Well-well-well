@@ -21,6 +21,15 @@ a {
     text-decoration: none;
 }
 
+.Main {
+    width: 100%;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+}
+
 .main {
     width: 100%;
     display: flex;

@@ -1,0 +1,53 @@
+.employeemanagementpagination_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 0 40px;
+
+    .employeemanagementpagination_text {
+        font-family: Manrope;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #565D6DFF;
+    }
+
+    .employeemanagementpagination_text span {
+        color: #171A1FFF;
+        font-family: Manrope;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+
+    .employeemanagementpagination_part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+
+        .employeemanagementpagination_p {
+            font-family: Manrope;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #171A1FFF;
+        }
+
+        .employeemanagementpagination_dropdown {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            .employeemanagementpagination_dropdown_number {
+                font-family: Manrope;
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 500;
+                color: #171A1FFF;
+            }
+        }
+    }
+}
