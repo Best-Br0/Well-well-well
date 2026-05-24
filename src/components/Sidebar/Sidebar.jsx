@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import PageItem from "./PageItem";
+import PagesOfPage from "./PagesOfPage";
 
 import { SlHome } from "react-icons/sl";
 import { RxPeople } from "react-icons/rx";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { RxAvatar } from "react-icons/rx";
+
+import { LuGraduationCap } from "react-icons/lu";
+import { PiArrowsLeftRightBold } from "react-icons/pi";
+import { LuWarehouse } from "react-icons/lu";
 
 export default function Sidebar() {
     return (
@@ -47,71 +52,12 @@ export default function Sidebar() {
 
                     <div className="with_pages">
 
-                        <div className="page">
-                            <div className="content">
-                                <div className="line"></div>
-                                <img
-                                    className="page_foto"
-                                    src="/src/assets/svg/Warehouse.svg"
-                                    alt=""
-                                />
-                                <h1 className="page_title">Склад</h1>
-                            </div>
-
-                            <img
-                                className="arrow"
-                                src="/src/assets/svg/ChevronDown.svg"
-                                alt=""
-                            />
-                        </div>
-
-                        <div className="of_pages">
-                            <Link to="" className="page">Материалы</Link>
-                            <Link to="" className="page">Аренда</Link>
-                            <Link to="" className="page">Инвентарь</Link>
-                        </div>
-
-                        <div className="page">
-                            <div className="content">
-                                <div className="line"></div>
-
-                                <img
-                                    className="page_foto"
-                                    src="/src/assets/svg/ArrowLeftRight.svg"
-                                    alt=""
-                                />
-
-                                <h1 className="page_title">
-                                    Транзакции
-                                </h1>
-                            </div>
-
-                            <img
-                                className="arrow"
-                                src="/src/assets/svg/ChevronDown.svg"
-                                alt=""
-                            />
-                        </div>
-
-                        <div className="page">
-                            <div className="content">
-                                <div className="line"></div>
-
-                                <img
-                                    className="page_foto"
-                                    src="/src/assets/svg/GraduationCap.svg"
-                                    alt=""
-                                />
-                                <h1 className="page_title">
-                                    Образование
-                                </h1>
-                            </div>
-                            <img
-                                className="arrow"
-                                src="/src/assets/svg/ChevronDown.svg"
-                                alt=""
-                            />
-                        </div>
+                        <PagesOfPage title={"Склад"} icon={<LuWarehouse className="page_foto" />}
+                            ofpages={{ first: "Материалы", second: "Аренда", last: "Инвентарь" }} />
+                        <PagesOfPage title={"Транзакций"} icon={<PiArrowsLeftRightBold className="page_foto" />}
+                            ofpages={{ first: "Страница", second: "Страница", last: "Страница" }} />
+                        <PagesOfPage title={"Оброзование"} icon={<LuGraduationCap className="page_foto" />}
+                            ofpages={{ first: "Страница ", second: "Страница", last: "Страница" }} />
 
                     </div>
 
