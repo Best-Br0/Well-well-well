@@ -13,6 +13,7 @@ import { LuWarehouse } from "react-icons/lu";
 
 export default function Sidebar() {
     return (
+        // tutorial
         <div className="Sidebar">
             <div className="sidebar_wrapper">
 
