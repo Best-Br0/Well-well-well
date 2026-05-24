@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 30px;
     padding-top: 50px;
 
     .achievements {
@@ -32,6 +32,30 @@
                 }
             }
 
+            .achievements_regres {
+                width: 61px;
+                height: 24px;
+                background: #DD3C3C1A;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .achievements_percent_trending {
+                    width: 12px;
+                    height: 12px;
+                    color: #DD3C3CFF
+                }
+
+                .achievements_percent_text {
+                    font-family: Manrope;
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: 500;
+                    color: #171A1FFF;
+                }
+            }
+
             .achievements_percent {
                 display: flex;
                 align-items: center;
@@ -51,5 +75,31 @@
                 }
             }
         }
+
+        .achievements_text {
+            font-family: Manrope;
+            padding-top: 15px;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #565D6DFF;
+        }
+
+        .achievements_success {
+            font-family: Manrope;
+            padding-top: 5px;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+            color: #171A1FFF;
+        }
     }
+}
+
+.home_wrapper2 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 50px;
+    padding: 0 30px;
 }
