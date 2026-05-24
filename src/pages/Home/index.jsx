@@ -8,6 +8,7 @@ import LayersOutlinedIcon from '@mui/icons-material/LayersOutlined';
 import Statistics from "./components/Statistics";
 import Top from "./components/Top"
 import Order from "./components/Order";
+import Rent from "./components/Rent"
 
 export default function Home() {
     return (
@@ -25,6 +26,7 @@ export default function Home() {
             </div>
             <div className="home_wrapper3">
                 <Order />
+                <Rent />
             </div>
         </>
     )
