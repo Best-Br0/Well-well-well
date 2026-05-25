@@ -2,7 +2,7 @@ import React from 'react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import AddIcon from '@mui/icons-material/Add';
 import EmployeeManagementListItem from './EmployeeManagementListItem';
-import { Link } from "react-router-dom";
+import { NavLink, Link } from 'react-router-dom';
 
 export default function EmployeeManagementList() {
   return (
