@@ -13,8 +13,14 @@ import ClientsDetailsPage from "../pages/Clients/ClientsDetails";
 import ClientsAdd from "../pages/Clients/ClientsForm";
 import ClientsUpdate from "../pages/Clients/ClientsUpdate";
 import SuppplierFormPage from "../pages/Supplier/SuppilerForm";
+<<<<<<< HEAD
 import SupplierForm from "../pages/Supplier/UpdateSupplier/components";
 import SupplierUpdate from "../pages/Supplier/UpdateSupplier";
+=======
+import Materials from "../pages/Warehouse/Materials/components/Materials";
+import RentManagment from "../pages/Warehouse/Rent/RentManagment/RentManagment";
+import InventoryManagment from "../pages/Warehouse/Inventory/InventoryManagment/InventoryManagment";
+>>>>>>> d94c06fdc74120b288e835eb81855d7296241d73
 
 export const routes = createBrowserRouter([
     {
@@ -34,7 +40,13 @@ export const routes = createBrowserRouter([
             { path: "/clients/details/:id", element: <ClientsDetailsPage /> },
             { path: "/clients/add", element: <ClientsAdd /> },
             { path: "/clients/update/:id", element: <ClientsUpdate /> },
+<<<<<<< HEAD
             {path: "/supplier/update/:id", element: <SupplierUpdate/>}
+=======
+            { path: "/materials", element: <Materials /> },
+            { path: "/rentmanagment", element: <RentManagment /> },
+            { path: "/inventarymanegment", element: <InventoryManagment /> }
+>>>>>>> d94c06fdc74120b288e835eb81855d7296241d73
         ]
     }
 ])
