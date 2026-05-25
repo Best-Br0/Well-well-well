@@ -2,6 +2,7 @@ import React from 'react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import AddIcon from '@mui/icons-material/Add';
 import EmployeeManagementListItem from './EmployeeManagementListItem';
+import { NavLink } from 'react-router-dom';
 
 export default function EmployeeManagementList() {
   return (
@@ -15,8 +16,8 @@ export default function EmployeeManagementList() {
           </div>
         </div>
         <button className="employeemanagementlist_add">
-          <AddIcon className="employeemanagementlist_addicon" />
-          <h5 className="employeemanagementlist_add_text">Добавить сотрудника</h5>
+            <AddIcon className="employeemanagementlist_addicon" />
+            <h5 className="employeemanagementlist_add_text">Добавить сотрудника</h5>
         </button>
       </div>
       <div className="employeemanagementlist_info">
