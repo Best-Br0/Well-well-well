@@ -14,11 +14,11 @@ export default function Home() {
     return (
         <>
             <Header title="Главная" />
-            <div className="home_wrapper">
+            <div className='home_wrapper'>
                 <Achievements Icon={TrendingUpIcon} SmallIcon={TrendingUpIcon} height="12,5%" text="Выручка за месяц" success="1,245,600 сом" box="achievements_percent" />
                 <Achievements Icon={ShoppingBagOutlinedIcon} SmallIcon={TrendingUpIcon} height="+8,2%" text="Количество заказов" success="482" box="achievements_percent" />
-                <Achievements Icon={VpnKeyOutlinedIcon} SmallIcon={TrendingDownOutlinedIcon} height="+8,2%" text=" Коллекций в аренде" success="24" box="achievements_regres" />
-                <Achievements Icon={LayersOutlinedIcon} SmallIcon={TrendingUpIcon} height="+8,2%" text="Остаток тканей" success="78%" box="achievements_percent" />
+                <Achievements Icon={VpnKeyOutlinedIcon} SmallIcon={TrendingDownOutlinedIcon} height="-3,1%" text=" Коллекций в аренде" success="24" box="achievements_regres" />
+                <Achievements Icon={LayersOutlinedIcon} SmallIcon={TrendingUpIcon} height="+2,4%" text="Остаток тканей" success="78%" box="achievements_percent" />
             </div>
             <div className="home_wrapper2">
                 <Statistics />
