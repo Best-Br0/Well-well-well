@@ -33,14 +33,17 @@ export default function MaterialsManagmentListItem({ id, name, price, quantity, 
             <div className="employeemanagementlistitem_actions">
                 <div className="materialsmanagmentlistitem_plus">+</div>
                 <div className="materialsmanagmentlistitem_minus"></div> 
-                <Link to={"/clients/details/id"}>
+                <Link to={"/materials/details/id"}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
                     </div>
                 </Link>
+
+                <Link to={"/material/update/:id"}>
                 <div className="employeemanagementlistitem_actions_edit">
                     <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
                 </div>
+                </Link>
                 <div
                     className="employeemanagementlistitem_actions_delete"
                     onClick={() => setIsOpen(true)}

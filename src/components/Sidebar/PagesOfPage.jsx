@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { IoChevronDownOutline } from "react-icons/io5";
 
 
-export default function PagesOfPage({ title, icon, ofpages }) {
+export default function PagesOfPage({ title, icon, ofpages, linkpages }) {
 
     const [pages, setPages] = useState(false)
 
@@ -21,9 +21,9 @@ export default function PagesOfPage({ title, icon, ofpages }) {
                 </div>
 
                 <div style={{ display: pages ? "inherit" : "none" }} className="of_pages">
-                    <Link to="" className="page">{ofpages.first}</Link>
-                    <Link to="" className="page">{ofpages.second}</Link>
-                    <Link to="" className="page">{ofpages.last}</Link>
+                    <Link to={linkpages?.first} className="page">{ofpages.first}</Link>
+                    <Link to={linkpages?.second} className="page">{ofpages.second}</Link>
+                    <Link to={linkpages?.last} className="page">{ofpages.last}</Link>
                 </div>
             </div>
         </>

@@ -1,0 +1,105 @@
+.product_details_page {
+    position: relative;
+    padding: 80px 32px;
+}
+
+.product_details {
+    width: 100%;
+    height: 390px;
+    box-shadow: 0px 0px 2px 0px #171A1F0D;
+    box-shadow: 0px 17px 35px 0px #171A1F0D;
+    padding: 40px;
+    border-radius: 12px;
+    display: flex;
+    gap: 48px;
+
+    .material_foto {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .title {
+            font-family: var(--FontOne);
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #565D6D;
+        }
+
+        .foto {
+            width: 240px;
+            height: 240px;
+            border-radius: 16px;
+            border: 1px solid #DEE1E6;
+        }
+    }
+
+    .material_informations {
+        display: flex;
+        gap: 226px;
+
+        .informations {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .text {
+                    font-family: var(--FontOne);
+                    font-weight: 600;
+                    font-style: SemiBold;
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    color: #565D6D;
+                }
+
+                .subtitle {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    .title {
+                        font-family: var(--FontOne);
+                        font-weight: 500;
+                        font-style: Medium;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0px;
+                        color: #171A1F;
+                    }
+
+                    .icon {
+                        width: 16px;
+                        height: 16px;
+                        color: #22C3A8;
+                    }
+                }
+
+                .status {
+                    width: 94px;
+                    padding: 4px 12px;
+                    font-family: Manrope;
+                    font-weight: 600;
+                    font-style: SemiBold;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0px;
+                    color: #22C3A8;
+                    background: #22C3A81A;
+                    border-radius: 14px;
+                }
+
+                
+            }
+        }
+    }
+}
