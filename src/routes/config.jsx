@@ -15,13 +15,13 @@ export const routes = createBrowserRouter([
         element: <Layout />,
         children: [
             { index: true, element: <Home /> },
-            { path: "/empleer", element: <Empleer /> },
+            { path: "/employee", element: <Empleer /> },
             { path: "/supplier", element: <PageSupplier /> },
             { path: "/clients", element: <PageClients /> },
             { path: "/login", element: <LogIn /> },
-            { path: "/create", element: <CreateEmployeePage /> },
-            { path: "/update/:id", element: <UpdateEmployeePage /> },
-            { path: "/employee-management/details/:id", element: <DeteilsEmployeePage /> }
+            { path: "/employee/create", element: <CreateEmployeePage /> },
+            { path: "/employee/update/:id", element: <UpdateEmployeePage /> },
+            { path: "/employee/details/:id", element: <DeteilsEmployeePage /> }
         ]
     }
 ])

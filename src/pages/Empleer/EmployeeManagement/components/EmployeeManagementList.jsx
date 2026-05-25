@@ -15,7 +15,7 @@ export default function EmployeeManagementList() {
             <KeyboardArrowDownIcon />
           </div>
         </div>
-        <Link to="/create" style={{ textDecoration: 'none' }}>
+        <Link to="/employee/create" style={{ textDecoration: 'none' }}>
           <button className="employeemanagementlist_add">
             <AddIcon className="employeemanagementlist_addicon" />
             <h5 className="employeemanagementlist_add_text">Добавить сотрудника</h5>
