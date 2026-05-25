@@ -10,9 +10,11 @@ import UpdateEmployeePage from "../pages/Main/EmployeeManagement/UpdateEmployee"
 import DeteilsEmployeePage from "../pages/Main/EmployeeManagement/DeteilsEmployee";
 import DetailsSupplier from "../pages/Supplier/DetailsSupplier";
 import ClientsDetailsPage from "../pages/Clients/ClientsDetails";
-import ClientsAdd from "../pages/Clients/ClientsForm/components/index";
-import ClientsUpdate from "../pages/Clients/ClientsUpdate/components";
+import ClientsAdd from "../pages/Clients/ClientsForm";
+import ClientsUpdate from "../pages/Clients/ClientsUpdate";
 import SuppplierFormPage from "../pages/Supplier/SuppilerForm";
+import SupplierForm from "../pages/Supplier/UpdateSupplier/components";
+import SupplierUpdate from "../pages/Supplier/UpdateSupplier";
 
 export const routes = createBrowserRouter([
     {
@@ -32,6 +34,7 @@ export const routes = createBrowserRouter([
             { path: "/clients/details/:id", element: <ClientsDetailsPage /> },
             { path: "/clients/add", element: <ClientsAdd /> },
             { path: "/clients/update/:id", element: <ClientsUpdate /> },
+            {path: "/supplier/update/:id", element: <SupplierUpdate/>}
         ]
     }
 ])

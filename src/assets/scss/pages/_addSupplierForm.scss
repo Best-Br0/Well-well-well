@@ -1,0 +1,164 @@
+.supplier-form-container {
+  padding: 24px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+
+  .back-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #4a5568;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 32px;
+    padding: 0;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #1a202c;
+    }
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .flex-row-group {
+    display: flex;
+    gap: 24px;
+    align-items: flex-end;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+
+    &.size-half {
+      flex: 1;
+    }
+
+    &.full-width {
+      grid-column: span 2;
+    }
+
+    label {
+      color: #4a5568;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    input, select {
+      width: 100%;
+      height: 46px;
+      padding: 0 16px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #1a202c;
+      outline: none;
+      background-color: #ffffff;
+      box-sizing: border-box;
+      transition: border-color 0.2s;
+
+      &::placeholder {
+        color: #cbd5e1;
+      }
+
+      &:focus {
+        border-color: #10b981;
+      }
+    }
+  }
+
+  .select-wrapper {
+    position: relative;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 6px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6'%3E%3Cpath stroke='%234A5568' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m1 1 4 4 4-4'/%3E%3C/svg%3E");
+      background-size: contain;
+      background-repeat: no-repeat;
+      pointer-events: none;
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      padding-right: 40px;
+      color: #cbd5e1;
+
+      &:focus {
+        color: #1a202c;
+      }
+      
+      option {
+        color: #1a202c;
+      }
+    }
+  }
+
+  .form-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+
+    button {
+      height: 46px;
+      padding: 0 24px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-submit {
+      background-color: #10b981;
+      border: none;
+      color: #ffffff;
+
+      &:hover {
+        background-color: #059669;
+      }
+    }
+
+    .btn-cancel {
+      background-color: #ffffff;
+      border: 1px solid #cbd5e1;
+      color: #4a5568;
+
+      &:hover {
+        background-color: #f8f9fa;
+        border-color: #94a3b8;
+      }
+    }
+  }
+}
+

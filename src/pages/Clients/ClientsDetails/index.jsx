@@ -11,7 +11,7 @@ export default function ClientsDetailsPage() {
         <>
             <Header title={"Просмотр клиента"} />
             <div className="client_details_main">
-                <BackList />ыы
+                <BackList />
                 <ClientDetails />
                 <div className="details_carts">
                     <ClientDetailCart text={"Общее количество заказов"} title={"342"} />

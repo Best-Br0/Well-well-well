@@ -40,9 +40,12 @@ export default function ClientsManagmentListItem({ id, name, number, gender }) {
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
                     </div>
                 </Link>
-                <div className="employeemanagementlistitem_actions_edit">
-                    <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
-                </div>
+
+                <Link to={"/clients/update/:id"}>
+                    <div className="employeemanagementlistitem_actions_edit">
+                        <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
+                    </div>
+                </Link>
                 <div
                     className="employeemanagementlistitem_actions_delete"
                     onClick={() => setIsOpen(true)}

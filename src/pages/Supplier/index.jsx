@@ -4,7 +4,7 @@ import SupplierManagment from "./components/SupplierManagment"
 export default function PageSupplier() {
 
     return <>
-        <Header title="Управление поставшиками" />
+        <Header title="Изменить поставщика" />
         <SupplierManagment />
     </>
 }
