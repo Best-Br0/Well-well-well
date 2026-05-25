@@ -13,13 +13,13 @@ export default function EmployeeManagementListItem({ id, name, addres, number, b
             <div className='employeemanagementlistitem_number'>{number}</div>
             <div className='employeemanagementlistitem_birth'>{birth}</div>
             <div className="employeemanagementlistitem_actions">
-                <Link to={`/employee-management/details/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link to={`/employee/details/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
                     </div>
                 </Link>
 
-                <Link to={`/update/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link to={`/employee/update/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                     <div className="employeemanagementlistitem_actions_edit">
                         <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
                     </div>

@@ -35,8 +35,9 @@ export default function Sidebar() {
 
                     <PageItem
                         icon={<RxPeople className="page_foto" />}
-                        to="/empleer"
+                        to="/employee"
                         title="Сотрудники"
+                        active="/employee"
                     />
 
                     <PageItem
@@ -61,9 +62,7 @@ export default function Sidebar() {
                             ofpages={{ first: "Страница ", second: "Страница", last: "Страница" }} />
 
                     </div>
-
                 </div>
-
             </div>
         </div>
     );
