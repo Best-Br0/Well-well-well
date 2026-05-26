@@ -1,7 +1,10 @@
-import { Link } from "react-router-dom";
-
+import Header from "../../components/Header"
+import SupplierManagment from "./components/SupplierManagment"
 
 export default function PageSupplier() {
 
-    return <Link to={"/supplier/details/:id"}>Поставщики</Link>
+    return <>
+        <Header title="Управление поставшиками" />
+        <SupplierManagment />
+    </>
 }
