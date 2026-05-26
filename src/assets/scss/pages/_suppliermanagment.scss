@@ -1,0 +1,80 @@
+.suppliermanagment {
+    width: 100%;
+    padding: 0 30px;
+
+    .suppliermanagment_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 35px;
+
+        .suppliermanagment_search {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .suppliermanagment_inp {
+                width: 448px;
+                height: 40px;
+                font-family: Manrope;
+                font-size: 14px;
+                line-height: 22px;
+                font-weight: 400;
+                background: #FFFFFFFF;
+                border-radius: 6px;
+                border-width: 1px;
+                border-color: #DEE1E6FF;
+                padding: 12px;
+                border-style: solid;
+                outline: none;
+            }
+
+            .suppliermanagment_filter {
+                width: 180px;
+                height: 40px;
+                opacity: 1;
+                border-radius: 6px;
+                padding: 8px 12px;
+                border: 1px solid #DEE1E6FF;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .suppliermanagment_filter_text {
+                    font-family: Manrope;
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    color: #171A1FFF;
+                }
+            }
+        }
+
+        .suppliermanagment_add {
+            width: 219px;
+            height: 40px;
+            padding: 0 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Manrope;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 500;
+            color: #FFFFFFFF;
+            background: #22C3A8FF;
+            opacity: 1;
+            border-radius: 6px;
+            border-width: 0px;
+            border-color: #000000FF;
+            border-style: solid;
+            box-shadow: 0px 0px 2px #171a1f1F, 0px 4px 9px #171a1f1C;
+            gap: 8px;
+
+            .suppliermanagment_addicon {
+                font-size: 20px;
+            }
+        }
+
+    }
+}

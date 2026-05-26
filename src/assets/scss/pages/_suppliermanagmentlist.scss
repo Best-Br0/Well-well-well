@@ -1,0 +1,71 @@
+.suppliermanagmentlist {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 2px 0px #171A1F0D;
+    box-shadow: 0px 17px 35px 0px #171A1F0D;
+    margin-top: 50px;
+    background: #FFFFFF;
+
+    .suppliermanagmentlist_info {
+        width: 100%;
+        background: #F3F4F6FF;
+        border-radius: 12px 12px 0 0;
+        border-bottom: 1px solid #DEE1E6FF;
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        .suppliermanagmentlist_info_th {
+            height: 53px;
+            padding: 0 15px;
+            vertical-align: middle;
+            text-align: left;
+            box-sizing: border-box;
+
+            font-family: Manrope, sans-serif;
+            font-weight: 700;
+            font-size: 11px;
+            color: #171A1FB2;
+            line-height: 20px;
+            letter-spacing: 1.1px;
+            text-transform: uppercase;
+
+            &:first-child {
+                padding-left: 25px;
+            }
+
+            &:last-child {
+                padding-right: 25px;
+                text-align: right;
+            }
+        }
+    }
+
+    .suppliermanagmentlistitem {
+        width: 100%;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        background: transparent;
+        border-bottom: 1px solid #DEE1E6FF;
+        box-sizing: border-box;
+
+        .suppliermanagmentlistitem_cell {
+            flex: 1;
+            padding: 0 15px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+
+            &:first-child {
+                flex: 0 0 auto;
+                width: 60px;
+                padding-left: 25px;
+            }
+
+            &:last-child {
+                padding-right: 25px;
+                justify-content: flex-end;
+            }
+        }
+    }
+}

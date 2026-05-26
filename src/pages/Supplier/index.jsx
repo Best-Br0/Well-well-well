@@ -1,4 +1,10 @@
+import Header from "../../components/Header"
+import SupplierManagment from "./components/SupplierManagment"
+
 export default function PageSupplier() {
 
-    return <h1>Поставщики</h1>
+    return <>
+        <Header title="Управление поставшиками" />
+        <SupplierManagment />
+    </>
 }
