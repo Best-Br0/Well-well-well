@@ -1,0 +1,64 @@
+.supplier_orders {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    .orders_title {
+        font-family: var(--FontOne);
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        color: var(--TitleBlack);
+    }
+
+    .orders_table {
+        padding: 25px;
+        border-radius: 10px;
+
+        .search_filter {
+            display: flex;
+            position: relative;
+            gap: 25px;
+
+            .search {
+                width: 447px;
+                height: 38px;
+                border: 1px solid #DEE1E6;
+                border-radius: 6px;
+                padding-left: 34px;
+                font-family: var(--FontOne);
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0%;
+                color: #9CA3AF;
+            }
+
+            .search_icon {
+                width: 16px;
+                height: 16px;
+                margin: 12px;
+                position: absolute;
+            }
+
+            .filter {
+                width: 107px;
+                height: 38px;
+                border: 1px solid #DEE1E6;
+                font-family: var(--FontOne);
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

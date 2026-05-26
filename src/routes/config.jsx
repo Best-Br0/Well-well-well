@@ -8,6 +8,7 @@ import Empleer from "../pages/Empleer";
 import CreateEmployeePage from "../pages/Main/EmployeeManagement/CreateEmployee";
 import UpdateEmployeePage from "../pages/Main/EmployeeManagement/UpdateEmployee";
 import DeteilsEmployeePage from "../pages/Main/EmployeeManagement/DeteilsEmployee";
+import DetailsSupplier from "../pages/Supplier/DetailsSupplier";
 
 export const routes = createBrowserRouter([
     {
@@ -21,7 +22,8 @@ export const routes = createBrowserRouter([
             { path: "/login", element: <LogIn /> },
             { path: "/employee/create", element: <CreateEmployeePage /> },
             { path: "/employee/update/:id", element: <UpdateEmployeePage /> },
-            { path: "/employee/details/:id", element: <DeteilsEmployeePage /> }
+            { path: "/employee/details/:id", element: <DeteilsEmployeePage /> },
+            { path: "/supplier/details/:id", element: <DetailsSupplier /> }
         ]
     }
 ])
