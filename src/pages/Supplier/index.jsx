@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
+
+
 export default function PageSupplier() {
 
-    return <h1>Поставщики</h1>
+    return <Link to={"/supplier/details/:id"}>Поставщики</Link>
 }
