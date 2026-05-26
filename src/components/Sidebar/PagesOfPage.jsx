@@ -10,14 +10,13 @@ export default function PagesOfPage({ title, icon, ofpages }) {
     return (
         <>
             <div className="pages_of_page">
-                <div className="page">
+                <div onClick={() => setPages(!pages)} className="page">
                     <div className="content">
                         <div className="line"></div>
                         {icon}
                         <h1 className="page_title">{title}</h1>
                     </div>
                     <IoChevronDownOutline style={{ transform: pages ? "rotate(180deg)" : "" }}
-                        onClick={() => setPages(!pages)}
                         className="arrow" />
                 </div>
 

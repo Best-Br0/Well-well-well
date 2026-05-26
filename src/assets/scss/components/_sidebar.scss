@@ -107,6 +107,21 @@
     .page:hover {
         transition: 0.1s linear;
         background: #22C3A81A;
+
+        .content {
+            .line {
+                background: var(--BackgroundOne);
+            }
+
+            .page_foto {
+                color: var(--BackgroundOne);
+            }
+
+            .page_title {
+                color: var(--BackgroundOne);
+            }
+        }
+
     }
 
     .page.active {
