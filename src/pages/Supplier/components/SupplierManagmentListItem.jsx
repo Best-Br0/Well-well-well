@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
 
-export default function SupplierManagmentListItem() {
+export default function SupplierManagmentListItem({ id, compani, name, number, gender }) {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -24,11 +24,13 @@ export default function SupplierManagmentListItem() {
 
     return (
         <div className="suppliermanagmentlistitem">
-            <div className="suppliermanagmentlistitem_cell">1</div>
-            <div className="suppliermanagmentlistitem_cell">ООО "Вектор"</div>
-            <div className="suppliermanagmentlistitem_cell">Иван Иванов</div>
-            <div className="suppliermanagmentlistitem_cell">+7 (999) 123-45-67</div>
-            <div className="suppliermanagmentlistitem_cell">M</div>
+            <p className="suppliermanagmentlistitem_cell">{id}</p>
+            <p className="suppliermanagmentlistitem_cell">{compani}</p>
+            <p className="suppliermanagmentlistitem_cell2">{name}</p>
+            <p className="suppliermanagmentlistitem_cell">{number}</p>
+            <div className="suppliermanagmentlistitem_box">
+                <p className="suppliermanagmentlistitem_gender">{gender}</p>
+            </div>
             <div className="employeemanagementlistitem_actions">
                 <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                     <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />

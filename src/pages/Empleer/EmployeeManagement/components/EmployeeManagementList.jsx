@@ -40,7 +40,7 @@ export default function EmployeeManagementList() {
         <EmployeeManagementListItem id="7" addres="г. Бишкек, ул. Киевская 114" name="Александр Коновалов" number="+996 555 123 456" birth="1993" />
         <EmployeeManagementListItem id="8" addres="г. Бишкек, ул. Киевская 114" name="Александр Коновалов" number="+996 555 123 456" birth="1996" />
       </div>
-      <hr className='employeemanagementlist_hr' />
+      <hr className='employeemanagementlist_hr' /> 
     </div>
   )
 }
