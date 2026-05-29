@@ -1,12 +1,10 @@
-.employeemanagementpagination_wrapper {
+.supplierpagination_wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 25px;
-    padding: 0 40px;
-    margin-bottom: 50px;
+    margin: 17px 0px;
 
-    .employeemanagementpagination_text {
+    .supplierpagination_text {
         font-family: var(--FontOne);
         font-size: 14px;
         line-height: 20px;
@@ -14,7 +12,7 @@
         color: #565D6DFF;
     }
 
-    .employeemanagementpagination_text span {
+    .supplierpagination_text span {
         color: #171A1FFF;
         font-family: var(--FontOne);
         font-size: 14px;
@@ -22,13 +20,13 @@
         font-weight: 500;
     }
 
-    .employeemanagementpagination_part {
+    .supplierpagination_part {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 25px;
 
-        .employeemanagementpagination_p {
+        .supplierpagination_p {
             font-family: var(--FontOne);
             font-size: 12px;
             line-height: 16px;
@@ -36,18 +34,26 @@
             color: #171A1FFF;
         }
 
-        .employeemanagementpagination_dropdown {
+        .supplierpagination_dropdown {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 15px;
 
-            .employeemanagementpagination_dropdown_number {
+            .supplierpagination_dropdown_number {
                 font-family: var(--FontOne);
                 font-size: 14px;
                 line-height: 16px;
                 font-weight: 500;
-                color: #171A1FFF;
+                color: #DEE1E6;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border: 1px solid #DEE1E6;
+                width: 55px;
+                height: 33px;
+                border-radius: 6px;
             }
         }
     }
