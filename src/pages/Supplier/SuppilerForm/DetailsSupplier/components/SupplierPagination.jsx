@@ -7,6 +7,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 export default function SupplierDetailsPagination() {
 
     return (
+        
         <div className="supplierpagination">
             <div className="supplierpagination_wrapper">
                 <h4 className="supplierpagination_text">Показано <span>1-10 </span>из <span>154</span> заказов</h4>
