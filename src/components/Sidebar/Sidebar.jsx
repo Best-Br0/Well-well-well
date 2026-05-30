@@ -44,12 +44,14 @@ export default function Sidebar() {
                         icon={<CiDeliveryTruck className="page_foto" />}
                         to="/supplier"
                         title="Поставщики"
+                        active="/supplier"
                     />
 
                     <PageItem
                         icon={<RxAvatar className="page_foto" />}
                         to="/clients"
                         title="Клиенты"
+                        active="/clients"
                     />
 
                     <div className="with_pages">
