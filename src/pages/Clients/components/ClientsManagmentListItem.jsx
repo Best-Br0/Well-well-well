@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
+import VIP from "../../../assets/icons/cup.svg"
 
-export default function ClientsManagmentListItem({ id, name, number }) {
+export default function ClientsManagmentListItem({ id, name, number, gender }) {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
@@ -26,6 +27,13 @@ export default function ClientsManagmentListItem({ id, name, number }) {
             <p className="clientsmanagmentlistitem_id">{id}</p>
             <p className="clientsmanagmentlistitem_p">{name}</p>
             <div className="clientsmanagmentlistitem_p">{number}</div>
+            <div className="clientsmanagmentlistitem_status_box">
+                <img className="clientsmanagmentlistitem_status_img" src={VIP} alt="" />
+                <h6 className="clientsmanagmentlistitem_status_text">VIP</h6>
+            </div>
+            <div className="clientsmanagmentlistitem_gender_box">
+                {gender}
+            </div>
             <div className="employeemanagementlistitem_actions">
                 <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                     <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
