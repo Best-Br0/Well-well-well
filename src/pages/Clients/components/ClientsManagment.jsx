@@ -14,10 +14,10 @@ export default function ClientsManagment() {
                         <KeyboardArrowDownIcon />
                     </div>
                 </div>
-                <Link to="/employee/create" style={{ textDecoration: 'none' }}>
+                <Link to="/clients/add" style={{ textDecoration: 'none' }}>
                     <button className="clientsmanagment_add">
                         <AddIcon className="clientsmanagment_addicon" />
-                        <h5 className="clientsmanagment_add_text">Добавить сотрудника</h5>
+                        <h5 className="clientsmanagment_add_text">Добавить клиента</h5>
                     </button>
                 </Link>
             </div>
