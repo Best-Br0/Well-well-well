@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="14" height="14">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C59A3F"/>
+      <stop offset="25%" stop-color="#E9C874"/>
+      <stop offset="50%" stop-color="#FFF3CD"/>
+      <stop offset="75%" stop-color="#E9C874"/>
+      <stop offset="100%" stop-color="#9A7422"/>
+    </linearGradient>
+    
+    <linearGradient id="gold-light" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3CD"/>
+      <stop offset="100%" stop-color="#E9C874"/>
+    </linearGradient>
+
+    <linearGradient id="wood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#512E1A"/>
+      <stop offset="50%" stop-color="#7A4328"/>
+      <stop offset="100%" stop-color="#3D2012"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M190,160 C110,160 90,240 150,270 C180,285 190,260 190,250 C160,250 140,220 165,190 C180,172 190,175 190,175" 
+        fill="url(#gold)" stroke="#7A5A18" stroke-width="3"/>
+
+  <path d="M322,160 C402,160 422,240 362,270 C332,285 322,260 322,250 C352,250 372,220 347,190 C332,172 322,175 322,175" 
+        fill="url(#gold)" stroke="#7A5A18" stroke-width="3"/>
+
+  <path d="M180,150 L332,150 C332,150 342,260 256,310 C170,260 180,150 180,150 Z" 
+        fill="url(#gold)" stroke="#7A5A18" stroke-width="4"/>
+  
+  <ellipse cx="256" cy="150" rx="76" ry="12" fill="url(#gold-light)" stroke="#7A5A18" stroke-width="3"/>
+
+  <path d="M236,305 L276,305 L268,360 L244,360 Z" fill="url(#gold)" stroke="#7A5A18" stroke-width="3"/>
+
+  <ellipse cx="256" cy="365" rx="35" ry="10" fill="url(#gold)" stroke="#7A5A18" stroke-width="3"/>
+  <ellipse cx="256" cy="375" rx="42" ry="12" fill="url(#gold)" stroke="#7A5A18" stroke-width="3"/>
+
+  <rect x="206" y="385" width="100" height="50" rx="4" fill="url(#wood)" stroke="#261309" stroke-width="3"/>
+
+  <rect x="221" y="397" width="70" height="26" rx="2" fill="url(#gold-light)" stroke="#7A5A18" stroke-width="2"/>
+
+  <path d="M176,435 L336,435 L331,450 L181,450 Z" fill="url(#wood)" stroke="#261309" stroke-width="3"/>
+</svg>
