@@ -35,9 +35,11 @@ export default function ClientsManagmentListItem({ id, name, number, gender }) {
                 {gender}
             </div>
             <div className="employeemanagementlistitem_actions">
-                <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
-                    <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
-                </div>
+                <Link to={"/clients/details/id"}>
+                    <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
+                        <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
+                    </div>
+                </Link>
                 <div className="employeemanagementlistitem_actions_edit">
                     <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
                 </div>

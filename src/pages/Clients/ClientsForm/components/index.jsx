@@ -34,17 +34,17 @@ export default function ClientsAdd() {
 
   return (
     <div className="clients-form-page">
-      
+
       <a href="#" className="back-to-list-btn" onClick={handleGoBack}>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M19 12H5M12 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M19 12H5M12 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
         Назад к списку
       </a>
 
       <form className="clients-main-form" onSubmit={handleSubmit}>
         <div className="form-grid-container">
-          
+
           <div className="form-field-group width-6">
             <label htmlFor="companyName">Название компании / Имя поставщика</label>
             <input type="text" id="companyName" placeholder="Введите название" />
@@ -58,10 +58,10 @@ export default function ClientsAdd() {
           {/* Поле телефона с фокусом и маской */}
           <div className="form-field-group width-6">
             <label htmlFor="phone">Телефон</label>
-            <input 
-              type="text" 
-              id="phone" 
-              placeholder="+996 (___) __-__-__" 
+            <input
+              type="text"
+              id="phone"
+              placeholder="+996 (___) __-__-__"
               value={phone}
               onFocus={handlePhoneFocus}
               onChange={handlePhoneChange}

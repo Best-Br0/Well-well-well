@@ -15,10 +15,10 @@ export default function SupplierManagment() {
                         <KeyboardArrowDownIcon />
                     </div>
                 </div>
-                <Link to="/supplier/details/:id" style={{ textDecoration: 'none' }}>
+                <Link to="/supplier/create" style={{ textDecoration: 'none' }}>
                     <button className="suppliermanagment_add">
                         <AddIcon className="suppliermanagment_addicon" />
-                        <h5 className="suppliermanagment_add_text">Добавить сотрудника</h5>
+                        <h5 className="suppliermanagment_add_text">Добавить поставщика</h5>
                     </button>
                 </Link>
             </div>
