@@ -1,9 +1,11 @@
-import ClientsAdd from "./components/index"
 import Header from "../../../components/Header"
+import ClientsAdd from "./components/index"
 
 export default function ClientAddPage() {
     return <>
-        <Header title='Добавить клиента' />
-        < ClientsAdd />
+        <div style={{ display: "flex" }}>
+            <Header title={"Добавить клиента"} />
+            <ClientsAdd />
+        </div>
     </>
 }
