@@ -1,5 +1,7 @@
 import BackList from "../../../components/BackList";
 import Header from "../../../components/Header";
+import MaterialsModalkaDecrease from "../../Warehouse/Materials/Modals/ModalkaDec";
+import MaterialsModalkaIncrease from "../../Warehouse/Materials/Modals/ModalkaInk";
 import ClientDetails from "./components/ClientDetails";
 import ClientDetailCart from "./components/DetailCart";
 import RentOrdersClient from "./components/RentOrders";
@@ -11,7 +13,7 @@ export default function ClientsDetailsPage() {
         <>
             <Header title={"Просмотр клиента"} />
             <div className="client_details_main">
-                <BackList />ыы
+                <BackList />
                 <ClientDetails />
                 <div className="details_carts">
                     <ClientDetailCart text={"Общее количество заказов"} title={"342"} />
@@ -21,7 +23,8 @@ export default function ClientsDetailsPage() {
                 </div>
                 <RentOrdersClient />
             </div>
-
+            {/* <MaterialsModalkaIncrease /> */}
+            <MaterialsModalkaDecrease />
         </>
     )
 }
