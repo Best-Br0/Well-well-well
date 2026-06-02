@@ -18,7 +18,7 @@ export default function Materials() {
               <KeyboardArrowDownIcon />
             </div>
           </div>
-          <Link to="" style={{ textDecoration: 'none' }}>
+          <Link to="/material/add" style={{ textDecoration: 'none' }}>
             <button className="materials_add">
               <AddIcon className="materials_addicon" />
               <h5 className="materials_add_text">Добавить материал</h5>

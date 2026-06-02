@@ -19,6 +19,12 @@ import ItemDetailsPage from "../pages/Warehouse/Rent/ItemDetails";
 import Materials from "../pages/Warehouse/Materials/components/Materials";
 import RentManagment from "../pages/Warehouse/Rent/RentManagment/RentManagment";
 import InventoryManagment from "../pages/Warehouse/Inventory/InventoryManagment/InventoryManagment";
+import MaterialAdd from "../pages/Warehouse/Materials/AddMaterials";
+import MaterialUpdate from "../pages/Warehouse/Materials/UpdateMaterial";
+import RentAdd from "../pages/Warehouse/Rent/RentAdd";
+import RentUpdate from "../pages/Warehouse/Rent/RentUpdate";
+import InventoryAdd from "../pages/Warehouse/Inventory/InventoryAdd";
+import InventoryUpdate from "../pages/Warehouse/Inventory/InventoryUpdate";
 
 export const routes = createBrowserRouter([
     {
@@ -44,6 +50,13 @@ export const routes = createBrowserRouter([
             { path: "/materials", element: <Materials /> },
             { path: "/rent", element: <RentManagment /> },
             { path: "/inventary", element: <InventoryManagment /> },
+            { path: "/material/add", element: <MaterialAdd /> },
+            { path: "/material/update/:id", element: <MaterialUpdate/> },
+            { path: "/rent/add", element: <RentAdd/> },
+            { path: "/rent/update/:id", element: <RentUpdate/> },
+            { path: "/inventory/add", element: <InventoryAdd/> },
+            { path: "/inventory/update/:id", element: <InventoryUpdate/> },
+
         ]
     }
 ])

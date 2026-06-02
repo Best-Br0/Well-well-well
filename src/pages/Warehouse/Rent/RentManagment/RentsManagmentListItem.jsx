@@ -38,9 +38,12 @@ export default function RentsManagmentListItem({ id, name, price, quantity, stat
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
                     </div>
                 </Link>
-                <div className="employeemanagementlistitem_actions_edit">
-                    <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
-                </div>
+
+                <Link to={"/rent/update/:id"}>
+                    <div className="employeemanagementlistitem_actions_edit">
+                        <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
+                    </div>
+                </Link>
                 <div
                     className="employeemanagementlistitem_actions_delete"
                     onClick={() => setIsOpen(true)}

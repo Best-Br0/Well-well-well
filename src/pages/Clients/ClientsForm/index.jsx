@@ -3,7 +3,7 @@ import ClientsAdd from "./components/index"
 
 export default function ClientAddPage() {
     return <>
-        <div style={{ display: "flex" }}>
+        <div>
             <Header title={"Добавить клиента"} />
             <ClientsAdd />
         </div>

@@ -38,9 +38,12 @@ export default function MaterialsManagmentListItem({ id, name, price, quantity, 
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
                     </div>
                 </Link>
+
+                <Link to={"/material/update/:id"}>
                 <div className="employeemanagementlistitem_actions_edit">
                     <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
                 </div>
+                </Link>
                 <div
                     className="employeemanagementlistitem_actions_delete"
                     onClick={() => setIsOpen(true)}
