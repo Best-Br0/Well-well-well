@@ -33,7 +33,7 @@ export default function InventoryManagmentListItem({ id, name, price, quantity, 
             <div className="employeemanagementlistitem_actions">
                 <div className="materialsmanagmentlistitem_plus">+</div>
                 <div className="materialsmanagmentlistitem_minus"></div>
-                <Link to={"/clients/details/id"}>
+                <Link to={"/inventary/details/id"}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
                     </div>
