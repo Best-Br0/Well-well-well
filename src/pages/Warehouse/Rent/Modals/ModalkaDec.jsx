@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FaMinus } from "react-icons/fa6";
 
-export default function MaterialsModalkaDecrease() {
+export default function ItemModalkaDecrease() {
 
     const QuantyInp = useRef(null)
     const [quantity, setQuantity] = useState("");
@@ -27,12 +27,12 @@ export default function MaterialsModalkaDecrease() {
 
                         <div className="modalka_details">
                             <div className="detail">
-                                <p className="text">Материал:</p>
-                                <h1 className="title">Мрамор белый Carrara</h1>
+                                <p className="text">Предмет:</p>
+                                <h1 className="title">Красная нить</h1>
                             </div>
                             <div className="detail">
                                 <p className="text">Текущее количество:</p>
-                                <h1 className="title">120 м</h1>
+                                <h1 className="title">4 шт</h1>
                             </div>
                         </div>
 

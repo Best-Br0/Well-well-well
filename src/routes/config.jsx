@@ -13,6 +13,9 @@ import ClientsDetailsPage from "../pages/Clients/ClientsDetails";
 import ClientsAdd from "../pages/Clients/ClientsForm/components/index";
 import ClientsUpdate from "../pages/Clients/ClientsUpdate/components";
 import SuppplierFormPage from "../pages/Supplier/SuppilerForm";
+import MaterialsDetailsPage from "../pages/Warehouse/Materials/MaterialsDetails";
+import ProductDetailsPage from "../pages/Warehouse/Inventory/ProductDetails";
+import ItemDetailsPage from "../pages/Warehouse/Rent/ItemDetails";
 
 export const routes = createBrowserRouter([
     {
@@ -32,6 +35,10 @@ export const routes = createBrowserRouter([
             { path: "/clients/details/:id", element: <ClientsDetailsPage /> },
             { path: "/clients/add", element: <ClientsAdd /> },
             { path: "/clients/update/:id", element: <ClientsUpdate /> },
+            { path: "/material/details/:id", element: <MaterialsDetailsPage /> },
+            { path: "/product/details/:id", element: <ProductDetailsPage /> },
+            { path: "/item/details/:id", element: <ItemDetailsPage /> }
+
         ]
     }
 ])
