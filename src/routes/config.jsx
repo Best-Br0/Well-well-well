@@ -38,12 +38,12 @@ export const routes = createBrowserRouter([
             { path: "/clients/details/:id", element: <ClientsDetailsPage /> },
             { path: "/clients/add", element: <ClientsAdd /> },
             { path: "/clients/update/:id", element: <ClientsUpdate /> },
-            { path: "/material/details/:id", element: <MaterialsDetailsPage /> },
-            { path: "/product/details/:id", element: <ProductDetailsPage /> },
-            { path: "/item/details/:id", element: <ItemDetailsPage /> },
+            { path: "/materials/details/:id", element: <MaterialsDetailsPage /> },
+            { path: "/inventary/details/:id", element: <ProductDetailsPage /> },
+            { path: "/rent/details/:id", element: <ItemDetailsPage /> },
             { path: "/materials", element: <Materials /> },
-            { path: "/rentmanagment", element: <RentManagment /> },
-            { path: "/inventarymanegment", element: <InventoryManagment /> },
+            { path: "/rent", element: <RentManagment /> },
+            { path: "/inventary", element: <InventoryManagment /> },
         ]
     }
 ])
