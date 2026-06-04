@@ -6,9 +6,14 @@ import { useState, useEffect } from "react";
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
 import VIP from "../../../../assets/icons/cup.svg"
+import MaterialsModalkaDecrease from "../Modals/ModalkaDec";
+import MaterialsModalkaIncrease from "../Modals/ModalkaInk";
 
 export default function MaterialsManagmentListItem({ id, name, price, quantity, status, statusbox }) {
     const [isOpen, setIsOpen] = useState(false);
+    const [decModal, setDecModal] = useState(false)
+    const [inkModal, setInkModal] = useState(false)
+
 
     useEffect(() => {
         if (!isOpen) return;
@@ -31,8 +36,10 @@ export default function MaterialsManagmentListItem({ id, name, price, quantity, 
             <div className={statusbox}>{status}</div>
             <div className="materialsmanagmentlistitem_color"></div>
             <div className="employeemanagementlistitem_actions">
-                <div className="materialsmanagmentlistitem_plus">+</div>
-                <div className="materialsmanagmentlistitem_minus"></div> 
+                <div onClick={() => setInkModal(true)} className="materialsmanagmentlistitem_plus">+</div>
+                {inkModal ? <MaterialsModalkaIncrease setModal={setInkModal} /> : ""}
+                <div onClick={() => setDecModal(true)} className="materialsmanagmentlistitem_minus"></div>
+                {decModal ? <MaterialsModalkaDecrease setModal={setDecModal} /> : ""}
                 <Link to={"/materials/details/id"}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
