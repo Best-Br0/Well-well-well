@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { FaMinus } from "react-icons/fa6";
 
-export default function ItemModalkaDecrease() {
+export default function ItemModalkaDecrease({setModal}) {
 
     const QuantyInp = useRef(null)
+    const overlay = useRef(null)
     const [quantity, setQuantity] = useState("");
     useEffect(() => {
         document.body.style.overflow = "hidden";
@@ -13,15 +14,35 @@ export default function ItemModalkaDecrease() {
         };
     }, []);
 
+    useEffect(() => {
+        const handleEsc = (e) => {
+            if (e.key === "Escape") {
+                setModal(false);
+            }
+        };
+
+        document.addEventListener("keydown", handleEsc);
+
+        return () => {
+            document.removeEventListener("keydown", handleEsc);
+        };
+    }, []);
+
+    const overlayClose = (e) => {
+        if (overlay.current.value === e.target.value) {
+            setModal(false)
+        }
+    }
+
     return (
         <>
-            <div className="overlay_delrease">
+            <div ref={overlay} onClick={overlayClose} className="overlay_delrease">
                 <div className="modalka">
                     <div className="head_modal">
                         <div className="icon_img">
                             <FaMinus className="icon" />
                         </div>
-                        <div className="title">Увеличить количество</div>
+                        <div className="title">Уменьшить количество</div>
                     </div>
                     <div className="main_modal">
 
@@ -48,7 +69,7 @@ export default function ItemModalkaDecrease() {
 
                     </div>
                     <div className="foot_modal">
-                        <button className="btn">Отмена</button>
+                        <button onClick={() => setModal(false)} className="btn">Отмена</button>
                         <button className={`btn save  ${Number(quantity) < 0 && "error_btn"}`}>Сохранить</button>
                     </div>
                 </div>
