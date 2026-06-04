@@ -25,6 +25,7 @@ import RentAdd from "../pages/Warehouse/Rent/RentAdd";
 import RentUpdate from "../pages/Warehouse/Rent/RentUpdate";
 import InventoryAdd from "../pages/Warehouse/Inventory/InventoryAdd";
 import InventoryUpdate from "../pages/Warehouse/Inventory/InventoryUpdate";
+import TransactionsOrdersPage from "../pages/Transactions/Orders";
 
 export const routes = createBrowserRouter([
     {
@@ -51,11 +52,12 @@ export const routes = createBrowserRouter([
             { path: "/rent", element: <RentManagment /> },
             { path: "/inventary", element: <InventoryManagment /> },
             { path: "/material/add", element: <MaterialAdd /> },
-            { path: "/material/update/:id", element: <MaterialUpdate/> },
-            { path: "/rent/add", element: <RentAdd/> },
-            { path: "/rent/update/:id", element: <RentUpdate/> },
-            { path: "/inventory/add", element: <InventoryAdd/> },
-            { path: "/inventory/update/:id", element: <InventoryUpdate/> },
+            { path: "/material/update/:id", element: <MaterialUpdate /> },
+            { path: "/rent/add", element: <RentAdd /> },
+            { path: "/rent/update/:id", element: <RentUpdate /> },
+            { path: "/inventory/add", element: <InventoryAdd /> },
+            { path: "/inventory/update/:id", element: <InventoryUpdate /> },
+            { path: "/transactions/orders", element: <TransactionsOrdersPage /> },
 
         ]
     }
