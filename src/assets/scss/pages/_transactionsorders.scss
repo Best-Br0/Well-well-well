@@ -1,0 +1,281 @@
+.transactions_orders {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 32px;
+
+    .head_order {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .filter_search {
+            display: flex;
+            gap: 17px;
+
+            .search {
+                position: relative;
+                width: 360px;
+
+                .input {
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 6px;
+                    border: 1px solid #DEE1E6;
+                    padding-left: 35px;
+                    font-family: var(--FontOne);
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: 0%;
+                    color: #9CA3AF;
+                    background: #FFF;
+                }
+
+                .icon {
+                    width: 16px;
+                    height: 16px;
+                    color: #9CA3AF;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    margin: 14px;
+                }
+            }
+
+            .filter {
+                width: 160px;
+                height: 40px;
+                border-radius: 6px;
+                border: 1px solid #DEE1E6;
+                box-shadow: 0px 0px 2px 0px #171A1F1F;
+                box-shadow: 0px 2px 5px 0px #171A1F17;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 13px;
+                background: #FFF;
+
+                .title {
+                    font-family: var(--FontOne);
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0px;
+                    color: #4B5563;
+                }
+
+                .icon {
+                    width: 16px;
+                    height: 16px;
+                    color: #9CA3AF;
+                }
+            }
+        }
+
+        .create_order {
+            width: 222px;
+            height: 40px;
+            border-radius: 6px;
+            background: #22C3A8;
+            box-shadow: 0px 0px 2px 0px #171A1F1F;
+            box-shadow: 0px 4px 9px 0px #171A1F1C;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-decoration: none;
+            font-family: var(--FontOne);
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #FFF;
+
+            .icon {
+                width: 16px;
+                height: 16px;
+                color: #FFF;
+            }
+        }
+    }
+
+    .main_order {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 25px;
+
+
+        .transaction_order {
+            width: 266px;
+            height: 322px;
+            border-radius: 16px;
+            background: #FFF;
+            border: 1px solid #F3F4F6;
+            box-shadow: 0px 0px 2px 0px #171A1F1F;
+            box-shadow: 0px 2px 5px 0px #171A1F17;
+
+            .main {
+                display: flex;
+                flex-direction: column;
+                padding: 21px;
+                gap: 23px;
+
+                .id_status {
+                    display: flex;
+                    align-items: start;
+                    justify-content: space-between;
+
+                    .id_title {
+                        font-family: var(--FontOne);
+                        font-weight: 600;
+                        font-style: SemiBold;
+                        font-size: 12px;
+                        line-height: 16px;
+                        letter-spacing: 0px;
+                        color: #9CA3AF;
+                    }
+
+                    .status_title {
+                        font-family: var(--FontOne);
+                        font-weight: 700;
+                        font-style: Bold;
+                        font-size: 10px;
+                        line-height: 15px;
+                        letter-spacing: 0.5px;
+                        text-transform: uppercase;
+                        padding: 4px 10px;
+                        border-radius: 12px;
+                    }
+
+                    .status_title.progress {
+                        color: #1D4ED8;
+                        background: #DBEAFE;
+                    }
+
+                    .status_title.paid {
+                        color: #15803D;
+                        background: #DCFCE7;
+                    }
+
+                    .status_title.debtor {
+                        color: #C2410C;
+                        background: #FFEDD5;
+                    }
+
+                    .status_title.overdue {
+                        color: #B91C1C;
+                        background: #FEE2E2;
+                    }
+
+                    .status_title.finished {
+                        color: #374151;
+                        background: #F3F4F6;
+                    }
+
+                    .status_title.canceled {
+                        color: #FFF;
+                        background: #1E293B;
+                    }
+                }
+
+                .people_type {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+
+                    .people_title {
+                        font-family: var(--FontOne);
+                        font-weight: 700;
+                        font-style: Bold;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0px;
+                        color: #111827;
+                    }
+
+                    .type {
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        .title {
+                            font-family: var(--FontOne);
+                            font-weight: 400;
+                            font-style: Regular;
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 0px;
+                            color: #6B7280;
+                        }
+                    }
+                }
+
+                .sum_paid_duty {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+
+                    .money {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .text {
+                            font-family: var(--FontOne);
+                            font-weight: 400;
+                            font-style: Regular;
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 0px;
+                            color: #6B7280;
+                        }
+
+                        .title {
+                            font-family: var(--FontOne);
+                            font-weight: 600;
+                            font-style: SemiBold;
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 0px;
+                        }
+
+                        .title.sum {
+                            color: #111827;
+                        }
+
+                        .title.paid {
+                            color: #16A34A;
+                        }
+
+                        .title.duty {
+                            color: #EF4444;
+                        }
+                    }
+                }
+
+                .started_finished {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .title {
+                        font-family: var(--FontOne);
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 12px;
+                        line-height: 16px;
+                        letter-spacing: 0px;
+                        color: #9CA3AF;
+                    }
+                }
+            }
+        }
+    }
+}
