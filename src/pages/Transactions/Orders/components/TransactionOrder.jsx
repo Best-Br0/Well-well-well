@@ -1,3 +1,5 @@
+import TransactionOrderActions from "./OrderActions";
+
 export default function TransactionOrder({ order }) {
 
 
@@ -36,6 +38,7 @@ export default function TransactionOrder({ order }) {
                         <h1 className="title">{order?.finished}</h1>
                     </div>
                 </div>
+                <TransactionOrderActions />
             </div>
         </>
     )
