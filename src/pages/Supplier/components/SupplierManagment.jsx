@@ -2,7 +2,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import AddIcon from '@mui/icons-material/Add';
 import { NavLink, Link } from 'react-router-dom';
 import SupplierManagmentList from './SupplierManagmentList';
-import SupplierManagmentPagination from "./SupplierManagmentPagination"
+import GlobalPagination from '../../../components/Pagination';
 
 export default function SupplierManagment() {
     return (
@@ -24,7 +24,7 @@ export default function SupplierManagment() {
             </div>
             <SupplierManagmentList />
             <hr className='suppliermanagmentlist_hr' />
-            <SupplierManagmentPagination />
+            <GlobalPagination/>
         </section>
     )
 }

@@ -1,5 +1,4 @@
 .statistics {
-    width: 708px;
     height: 476px;
     background: #FFFFFFFF;
     border-radius: 10px;
@@ -51,7 +50,7 @@
                     width: 12px;
                     height: 12px;
                     background: #3D99F5FF;
-                     border-radius: 50%;
+                    border-radius: 50%;
                 }
 
                 .statistics_termin_text {
@@ -65,3 +64,11 @@
         }
     }
 }
+
+.home_wrapper2 {
+    display: grid;
+    grid-template-columns: 65% 33%;
+    gap: 25px;
+    margin-top: 50px;
+    padding: 0 30px;
+}   
