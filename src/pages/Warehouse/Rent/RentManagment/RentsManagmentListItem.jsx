@@ -5,10 +5,17 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
-import VIP from "../../../../assets/icons/cup.svg"
+import VIP from "../../../../assets/icons/cup.svg";
+import MaterialsModalkaDecrease from "../Modals/ModalkaDec";
+import ItemModalkaDecrease from "../Modals/ModalkaDec";
+import ItemModalkaIncrease from "../Modals/ModalkaInc";
+
+
 
 export default function RentsManagmentListItem({ id, name, price, quantity, status, statusbox }) {
     const [isOpen, setIsOpen] = useState(false);
+    const [decModal, setDecModal] = useState(false)
+    const [inkModal, setInkModal] = useState(false)
 
     useEffect(() => {
         if (!isOpen) return;
@@ -31,8 +38,10 @@ export default function RentsManagmentListItem({ id, name, price, quantity, stat
             <div className={statusbox}>{status}</div>
             <div className="materialsmanagmentlistitem_color"></div>
             <div className="employeemanagementlistitem_actions">
-                <div className="materialsmanagmentlistitem_plus">+</div>
-                <div className="materialsmanagmentlistitem_minus"></div>
+                <div onClick={() => setInkModal(true)} className="materialsmanagmentlistitem_plus">+</div>
+                {inkModal ? <ItemModalkaIncrease setModal={setInkModal} /> : ""}
+                <div onClick={() => setDecModal(true)} className="materialsmanagmentlistitem_minus"></div>
+                {decModal ? <ItemModalkaDecrease setModal={setDecModal} /> : ""}
                 <Link to={"/rent/details/id"}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />

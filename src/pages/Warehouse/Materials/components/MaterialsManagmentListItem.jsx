@@ -42,9 +42,10 @@ export default function MaterialsManagmentListItem({ id, name, price, quantity, 
             <div className={statusbox}>{status}</div>
             <div className="materialsmanagmentlistitem_color"></div>
             <div className="employeemanagementlistitem_actions">
-                <div className="materialsmanagmentlistitem_plus"
-                    style={{ cursor: 'pointer' }}>+</div>
-                <div className="materialsmanagmentlistitem_minus"></div>
+                <div onClick={() => setInkModal(true)} className="materialsmanagmentlistitem_plus">+</div>
+                {inkModal ? <MaterialsModalkaIncrease setModal={setInkModal} /> : ""}
+                <div onClick={() => setDecModal(true)} className="materialsmanagmentlistitem_minus"></div>
+                {decModal ? <MaterialsModalkaDecrease setModal={setDecModal} /> : ""}
                 <Link to={"/materials/details/id"}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
