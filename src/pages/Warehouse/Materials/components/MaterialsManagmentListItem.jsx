@@ -6,14 +6,11 @@ import { useState, useEffect } from "react";
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
 import VIP from "../../../../assets/icons/cup.svg"
-import MaterialsModalkaDecrease from "../Modals/ModalkaDec";
-import MaterialsModalkaIncrease from "../Modals/ModalkaInk";
+import ModalkaDec from "../Modals/ModalkaDec";
 
 export default function MaterialsManagmentListItem({ id, name, price, quantity, status, statusbox }) {
     const [isOpen, setIsOpen] = useState(false);
-    const [decModal, setDecModal] = useState(false)
-    const [inkModal, setInkModal] = useState(false)
-
+    const [isIncreaseOpen, setIsIncreaseOpen] = useState(false);
 
     useEffect(() => {
         if (!isOpen) return;
@@ -26,6 +23,15 @@ export default function MaterialsManagmentListItem({ id, name, price, quantity, 
         window.addEventListener("keydown", handleKeyDown);
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, [isOpen]);
+
+    useEffect(() => {
+        if (!isIncreaseOpen) return;
+        const handleKeyDown = (event) => {
+            if (event.key === "Escape") setIsIncreaseOpen(false);
+        };
+        window.addEventListener("keydown", handleKeyDown);
+        return () => window.removeEventListener("keydown", handleKeyDown);
+    }, [isIncreaseOpen]);
 
     return (
         <div className="materialsmanagmentlistitem">
@@ -47,9 +53,9 @@ export default function MaterialsManagmentListItem({ id, name, price, quantity, 
                 </Link>
 
                 <Link to={"/material/update/:id"}>
-                <div className="employeemanagementlistitem_actions_edit">
-                    <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
-                </div>
+                    <div className="employeemanagementlistitem_actions_edit">
+                        <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
+                    </div>
                 </Link>
                 <div
                     className="employeemanagementlistitem_actions_delete"
