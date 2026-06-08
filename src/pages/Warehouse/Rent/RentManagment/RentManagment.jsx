@@ -17,7 +17,7 @@ export default function RentManagment() {
                             <KeyboardArrowDownIcon />
                         </div>
                     </div>
-                    <Link to="/rent/add" style={{ textDecoration: 'none' }}>
+                    <Link to="/warehouse/rent/add" style={{ textDecoration: 'none' }}>
                         <button className="materials_add">
                             <AddIcon className="materials_addicon" />
                             <h5 className="materials_add_text">Добавить материал</h5>

@@ -58,9 +58,10 @@ export default function Sidebar() {
 
                         <PagesOfPage title={"Склад"} icon={<LuWarehouse className="page_foto" />}
                             ofpages={{ first: "Материалы", second: "Аренда", last: "Инвентарь" }}
-                            linkpages={{ first: "/materials", second: "/rent", last: "/inventary" }} />
+                            linkpages={{ first: "/warehouse/materials", second: "/warehouse/rent", last: "/warehouse/inventary" }} />
                         <PagesOfPage title={"Транзакций"} icon={<PiArrowsLeftRightBold className="page_foto" />}
-                            ofpages={{ first: "Страница", second: "Страница", last: "Страница" }} />
+                            ofpages={{ first: "Заказы", second: "Аренда" }}
+                            linkpages={{ first: "/transactions/orders" }} />
                         <PagesOfPage title={"Оброзование"} icon={<LuGraduationCap className="page_foto" />}
                             ofpages={{ first: "Страница ", second: "Страница", last: "Страница" }} />
 

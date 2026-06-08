@@ -6,9 +6,6 @@ import TransactionOrder from "./components/TransactionOrder";
 
 export default function TransactionsOrdersPage() {
 
-
-
-
     return (
         <>
             <Header title={"Заказы"} />

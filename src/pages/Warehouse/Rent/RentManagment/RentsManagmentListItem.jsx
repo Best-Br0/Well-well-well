@@ -50,13 +50,13 @@ export default function RentsManagmentListItem({ id, name, price, quantity, stat
                     item: "Красная дорожка",
                     quanty: "4 шт"
                 }} setModal={setDecModal} /> : ""}
-                <Link to={"/rent/details/id"}>
+                <Link to={"/warehouse/rent/details/id"}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
                     </div>
                 </Link>
 
-                <Link to={"/rent/update/:id"}>
+                <Link to={"/warehouse/rent/update/:id"}>
                     <div className="employeemanagementlistitem_actions_edit">
                         <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
                     </div>

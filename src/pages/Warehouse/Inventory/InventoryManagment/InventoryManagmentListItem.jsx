@@ -52,13 +52,13 @@ export default function InventoryManagmentListItem({ id, name, price, quantity, 
                     item: "Красная нить",
                     quanty: "4 шт"
                 }} setModal={setDecModal} /> : ""}
-                <Link to={"/inventary/details/id"}>
+                <Link to={"/warehouse/inventary/details/id"}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
                     </div>
                 </Link>
 
-                <Link to={"/inventory/update/:id"}>
+                <Link to={"/warehouse/inventory/update/:id"}>
                     <div className="employeemanagementlistitem_actions_edit">
                         <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
                     </div>
