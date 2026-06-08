@@ -7,8 +7,8 @@ import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
 import VIP from "../../../../assets/icons/cup.svg";
 import MaterialsModalkaDecrease from "../Modals/ModalkaDec";
-import ItemModalkaDecrease from "../Modals/ModalkaDec";
-import ItemModalkaIncrease from "../Modals/ModalkaInc";
+import ModalkaIncrease from "../../../../components/Modals/ModalkaInk";
+import ModalkaDecrease from "../../../../components/Modals/ModalkaDec";
 
 
 
@@ -39,9 +39,17 @@ export default function RentsManagmentListItem({ id, name, price, quantity, stat
             <div className="materialsmanagmentlistitem_color"></div>
             <div className="employeemanagementlistitem_actions">
                 <div onClick={() => setInkModal(true)} className="materialsmanagmentlistitem_plus">+</div>
-                {inkModal ? <ItemModalkaIncrease setModal={setInkModal} /> : ""}
+                {inkModal ? <ModalkaIncrease data={{
+                    title: "Товар",
+                    item: "Красная дорожка",
+                    quanty: "4 шт"
+                }} setModal={setInkModal} /> : ""}
                 <div onClick={() => setDecModal(true)} className="materialsmanagmentlistitem_minus"></div>
-                {decModal ? <ItemModalkaDecrease setModal={setDecModal} /> : ""}
+                {decModal ? <ModalkaDecrease data={{
+                    title: "Товар",
+                    item: "Красная дорожка",
+                    quanty: "4 шт"
+                }} setModal={setDecModal} /> : ""}
                 <Link to={"/rent/details/id"}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />

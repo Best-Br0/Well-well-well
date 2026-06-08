@@ -6,8 +6,9 @@ import { useState, useEffect } from "react";
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
 import VIP from "../../../../assets/icons/cup.svg"
-import ProductModalkaDecrease from "../Modals/ModalkaDec";
-import ProductModalkaIncrease from "../Modals/ModalkaInk";
+import ModalkaIncrease from "../../../../components/Modals/ModalkaInk";
+import ModalkaDecrease from "../../../../components/Modals/ModalkaDec";
+
 
 
 export default function InventoryManagmentListItem({ id, name, price, quantity, status, statusbox }) {
@@ -40,9 +41,17 @@ export default function InventoryManagmentListItem({ id, name, price, quantity, 
             <div className="materialsmanagmentlistitem_color"></div>
             <div className="employeemanagementlistitem_actions">
                 <div onClick={() => setInkModal(true)} className="materialsmanagmentlistitem_plus">+</div>
-                {inkModal ? <ProductModalkaIncrease setModal={setInkModal} /> : ""}
+                {inkModal ? <ModalkaIncrease data={{
+                    title: "Предмет",
+                    item: "Красная нить",
+                    quanty: "4 шт"
+                }} setModal={setInkModal} /> : ""}
                 <div onClick={() => setDecModal(true)} className="materialsmanagmentlistitem_minus"></div>
-                {decModal ? <ProductModalkaDecrease setModal={setDecModal} /> : ""}
+                {decModal ? <ModalkaDecrease data={{
+                    title: "Предмет",
+                    item: "Красная нить",
+                    quanty: "4 шт"
+                }} setModal={setDecModal} /> : ""}
                 <Link to={"/inventary/details/id"}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />

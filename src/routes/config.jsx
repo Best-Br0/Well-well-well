@@ -61,7 +61,6 @@ export const routes = createBrowserRouter([
             { path: "/inventory/update/:id", element: <InventoryUpdate /> },
             { path: "/supplier/update/:id", element: <UpdateSupplier /> },
             { path: "/transactions/orders", element: <TransactionsOrdersPage /> },
-
         ]
     }
 ])

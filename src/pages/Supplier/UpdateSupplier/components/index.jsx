@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../../../../assets/scss/pages/_suplierupdate.scss';
 import BackList from '../../../../components/BackList';
 
 const SupplierUpdate = () => {
