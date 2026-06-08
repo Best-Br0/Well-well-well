@@ -59,13 +59,13 @@ export default function MaterialsManagmentListItem({ id, name, price, quantity, 
                     item: "Мрамор белый Carrara",
                     quanty: "120 м"
                 }} setModal={setDecModal} /> : ""}
-                <Link to={"/materials/details/id"}>
+                <Link to={"/warehouse/materials/details/id"}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
                     </div>
                 </Link>
 
-                <Link to={"/material/update/:id"}>
+                <Link to={"/warehouse/material/update/:id"}>
                     <div className="employeemanagementlistitem_actions_edit">
                         <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
                     </div>

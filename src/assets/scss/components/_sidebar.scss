@@ -55,6 +55,10 @@
                     font-weight: 400;
                     color: var(--TitleOne);
                 }
+
+                .page.active {
+                    color: var(--BackgroundOne);
+                }
             }
         }
     }

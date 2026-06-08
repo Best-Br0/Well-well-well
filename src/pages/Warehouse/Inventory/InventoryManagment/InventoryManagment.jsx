@@ -18,7 +18,7 @@ export default function InventoryManagment() {
                             <KeyboardArrowDownIcon />
                         </div>
                     </div>
-                    <Link to="/inventory/add" style={{ textDecoration: 'none' }}>
+                    <Link to="/warehouse/inventory/add" style={{ textDecoration: 'none' }}>
                         <button className="materials_add">
                             <AddIcon className="materials_addicon" />
                             <h5 className="materials_add_text">Добавить материал</h5>
