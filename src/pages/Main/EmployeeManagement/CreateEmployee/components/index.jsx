@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../../../../../assets/scss/pages/_createemployee.scss";
 import { 
     IoEyeOutline, 
     IoEyeOffOutline, 

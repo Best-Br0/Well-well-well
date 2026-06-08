@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 import { FaPlus } from "react-icons/fa6";
 
-export default function ProductModalkaIncrease({setModal}) {
+export default function MaterialsModalkaIncrease({ setModal , data }) {
+
 
     const overlay = useRef(null)
 
@@ -47,12 +48,12 @@ export default function ProductModalkaIncrease({setModal}) {
 
                         <div className="modalka_details">
                             <div className="detail">
-                                <p className="text">Товар:</p>
-                                <h1 className="title">Красная дорожка</h1>
+                                <p className="text">{data?.title}:</p>
+                                <h1 className="title">{data?.item}</h1>
                             </div>
                             <div className="detail">
                                 <p className="text">Текущее количество:</p>
-                                <h1 className="title">4шт</h1>
+                                <h1 className="title">{data?.quanty}</h1>
                             </div>
                         </div>
 

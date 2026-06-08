@@ -1,12 +1,11 @@
 .home_wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
     padding: 0 30px;
     padding-top: 50px;
 
     .achievements {
-        width: 258px;
         height: 160px;
         background: #FFFFFFFF;
         border-radius: 10px;
@@ -94,12 +93,4 @@
             color: #171A1FFF;
         }
     }
-}
-
-.home_wrapper2 {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin-top: 50px;
-    padding: 0 30px;
 }

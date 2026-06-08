@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { IMaskInput } from "react-imask";
-import "../../../../assets/scss/pages/_addSupplierForm.scss";
 
 const AddSupplierForm = ({ onBack, onSubmit }) => {
   const [formData, setFormData] = useState({

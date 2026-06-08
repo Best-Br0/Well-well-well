@@ -13,6 +13,7 @@ import ClientsDetailsPage from "../pages/Clients/ClientsDetails";
 import ClientsAdd from "../pages/Clients/ClientsForm/components/index";
 import ClientsUpdate from "../pages/Clients/ClientsUpdate/components";
 import SuppplierFormPage from "../pages/Supplier/SuppilerForm";
+import UpdateEmployee from "../pages/Main/EmployeeManagement/UpdateEmployee/components";
 import MaterialsDetailsPage from "../pages/Warehouse/Materials/MaterialsDetails";
 import ProductDetailsPage from "../pages/Warehouse/Inventory/ProductDetails";
 import ItemDetailsPage from "../pages/Warehouse/Rent/ItemDetails";
@@ -24,6 +25,7 @@ import MaterialUpdate from "../pages/Warehouse/Materials/UpdateMaterial";
 import RentAdd from "../pages/Warehouse/Rent/RentAdd";
 import RentUpdate from "../pages/Warehouse/Rent/RentUpdate";
 import InventoryAdd from "../pages/Warehouse/Inventory/InventoryAdd";
+import UpdateSupplier from "../pages/Supplier/UpdateSupplier"
 import InventoryUpdate from "../pages/Warehouse/Inventory/InventoryUpdate";
 import TransactionsOrdersPage from "../pages/Transactions/Orders";
 
@@ -57,8 +59,8 @@ export const routes = createBrowserRouter([
             { path: "/rent/update/:id", element: <RentUpdate /> },
             { path: "/inventory/add", element: <InventoryAdd /> },
             { path: "/inventory/update/:id", element: <InventoryUpdate /> },
+            { path: "/supplier/update/:id", element: <UpdateSupplier /> },
             { path: "/transactions/orders", element: <TransactionsOrdersPage /> },
-
         ]
     }
 ])

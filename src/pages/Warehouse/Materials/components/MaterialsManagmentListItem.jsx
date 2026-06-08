@@ -6,14 +6,16 @@ import { useState, useEffect } from "react";
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
 import VIP from "../../../../assets/icons/cup.svg"
-import MaterialsModalkaDecrease from "../Modals/ModalkaDec";
-import MaterialsModalkaIncrease from "../Modals/ModalkaInk";
+import ModalkaIncrease from "../../../../components/Modals/ModalkaInk";
+import ModalkaDecrease from "../../../../components/Modals/ModalkaDec";
+
+
 
 export default function MaterialsManagmentListItem({ id, name, price, quantity, status, statusbox }) {
     const [isOpen, setIsOpen] = useState(false);
+    const [isIncreaseOpen, setIsIncreaseOpen] = useState(false);
     const [decModal, setDecModal] = useState(false)
     const [inkModal, setInkModal] = useState(false)
-
 
     useEffect(() => {
         if (!isOpen) return;
@@ -27,6 +29,15 @@ export default function MaterialsManagmentListItem({ id, name, price, quantity, 
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, [isOpen]);
 
+    useEffect(() => {
+        if (!isIncreaseOpen) return;
+        const handleKeyDown = (event) => {
+            if (event.key === "Escape") setIsIncreaseOpen(false);
+        };
+        window.addEventListener("keydown", handleKeyDown);
+        return () => window.removeEventListener("keydown", handleKeyDown);
+    }, [isIncreaseOpen]);
+
     return (
         <div className="materialsmanagmentlistitem">
             <p className="materialsmanagmentlistitem_id">{id}</p>
@@ -37,9 +48,17 @@ export default function MaterialsManagmentListItem({ id, name, price, quantity, 
             <div className="materialsmanagmentlistitem_color"></div>
             <div className="employeemanagementlistitem_actions">
                 <div onClick={() => setInkModal(true)} className="materialsmanagmentlistitem_plus">+</div>
-                {inkModal ? <MaterialsModalkaIncrease setModal={setInkModal} /> : ""}
+                {inkModal ? <ModalkaIncrease data={{
+                    title: "Материал:",
+                    item: "Мрамор белый Carrara",
+                    quanty: "120 м"
+                }} setModal={setInkModal} /> : ""}
                 <div onClick={() => setDecModal(true)} className="materialsmanagmentlistitem_minus"></div>
-                {decModal ? <MaterialsModalkaDecrease setModal={setDecModal} /> : ""}
+                {decModal ? <ModalkaDecrease data={{
+                    title: "Материал:",
+                    item: "Мрамор белый Carrara",
+                    quanty: "120 м"
+                }} setModal={setDecModal} /> : ""}
                 <Link to={"/materials/details/id"}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />
@@ -47,9 +66,9 @@ export default function MaterialsManagmentListItem({ id, name, price, quantity, 
                 </Link>
 
                 <Link to={"/material/update/:id"}>
-                <div className="employeemanagementlistitem_actions_edit">
-                    <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
-                </div>
+                    <div className="employeemanagementlistitem_actions_edit">
+                        <ModeOutlinedIcon className="employeemanagementlistitem_editicons" />
+                    </div>
                 </Link>
                 <div
                     className="employeemanagementlistitem_actions_delete"

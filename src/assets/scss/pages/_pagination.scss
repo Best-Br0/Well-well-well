@@ -1,0 +1,60 @@
+.pagination_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 17px 0px;
+
+    .pagination_text {
+        font-family: var(--FontOne);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #565D6DFF;
+    }
+
+    .pagination_text span {
+        color: #171A1FFF;
+        font-family: var(--FontOne);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+
+    .pagination_part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+
+        .pagination_p {
+            font-family: var(--FontOne);
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #171A1FFF;
+        }
+
+        .pagination_dropdown {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            .pagination_dropdown_number {
+                font-family: var(--FontOne);
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 500;
+                color: #DEE1E6;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border: 1px solid #DEE1E6;
+                width: 55px;
+                height: 33px;
+                border-radius: 6px;
+            }
+        }
+    }
+}

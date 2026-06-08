@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { IoArrowBackOutline, IoCameraOutline, IoEyeOutline, IoEyeOffOutline } from 'react-icons/io5';
-import "../../../../../assets/scss/pages/_updateemployee.scss";
 
 export default function UpdateEmployee() {
     const navigate = useNavigate();
