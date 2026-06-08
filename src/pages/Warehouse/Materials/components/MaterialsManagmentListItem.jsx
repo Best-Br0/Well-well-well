@@ -6,11 +6,16 @@ import { useState, useEffect } from "react";
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
 import VIP from "../../../../assets/icons/cup.svg"
-import ModalkaDec from "../Modals/ModalkaDec";
+import ModalkaIncrease from "../../../../components/Modals/ModalkaInk";
+import ModalkaDecrease from "../../../../components/Modals/ModalkaDec";
+
+
 
 export default function MaterialsManagmentListItem({ id, name, price, quantity, status, statusbox }) {
     const [isOpen, setIsOpen] = useState(false);
     const [isIncreaseOpen, setIsIncreaseOpen] = useState(false);
+    const [decModal, setDecModal] = useState(false)
+    const [inkModal, setInkModal] = useState(false)
 
     useEffect(() => {
         if (!isOpen) return;
@@ -42,9 +47,18 @@ export default function MaterialsManagmentListItem({ id, name, price, quantity, 
             <div className={statusbox}>{status}</div>
             <div className="materialsmanagmentlistitem_color"></div>
             <div className="employeemanagementlistitem_actions">
-                <div className="materialsmanagmentlistitem_plus"
-                    style={{ cursor: 'pointer' }}>+</div>
-                <div className="materialsmanagmentlistitem_minus"></div>
+                <div onClick={() => setInkModal(true)} className="materialsmanagmentlistitem_plus">+</div>
+                {inkModal ? <ModalkaIncrease data={{
+                    title: "Материал:",
+                    item: "Мрамор белый Carrara",
+                    quanty: "120 м"
+                }} setModal={setInkModal} /> : ""}
+                <div onClick={() => setDecModal(true)} className="materialsmanagmentlistitem_minus"></div>
+                {decModal ? <ModalkaDecrease data={{
+                    title: "Материал:",
+                    item: "Мрамор белый Carrara",
+                    quanty: "120 м"
+                }} setModal={setDecModal} /> : ""}
                 <Link to={"/materials/details/id"}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />

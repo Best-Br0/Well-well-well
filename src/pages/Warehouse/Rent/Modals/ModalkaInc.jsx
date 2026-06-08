@@ -1,10 +1,42 @@
 import { FaPlus } from "react-icons/fa6";
+import { useEffect, useRef } from "react";
 
-export default function ItemModalkaIncrease() {
+
+export default function ItemModalkaIncrease({setModal}) {
+
+    const overlay = useRef(null)
+    
+        useEffect(() => {
+            document.body.style.overflow = "hidden";
+    
+            return () => {
+                document.body.style.overflow = "auto";
+            };
+        }, []);
+    
+        useEffect(() => {
+            const handleEsc = (e) => {
+                if (e.key === "Escape") {
+                    setModal(false);
+                }
+            };
+    
+            document.addEventListener("keydown", handleEsc);
+    
+            return () => {
+                document.removeEventListener("keydown", handleEsc);
+            };
+        }, []);
+    
+        const overlayClose = (e) => {
+            if (overlay.current.value === e.target.value) {
+                setModal(false)
+            }
+        }
 
     return (
         <>
-            <div className="overlay_increase">
+            <div ref={overlay} onClick={overlayClose} className="overlay_increase">
                 <div className="modalka">
                     <div className="head_modal">
                         <div className="icon_img">
@@ -30,7 +62,7 @@ export default function ItemModalkaIncrease() {
                         </div>
                     </div>
                     <div className="foot_modal">
-                        <button className="btn">Отмена</button>
+                        <button onClick={() => setModal(false)} className="btn">Отмена</button>
                         <button className="btn save">Сохранить</button>
                     </div>
                 </div>

@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import '../../../../../assets/scss/pages/_materialadd.scss';
 import BackList from '../../../../../components/BackList';
 
 const AVAILABLE_COLORS = [

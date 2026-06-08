@@ -1,7 +1,6 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { IoArrowBackOutline, IoCallOutline, IoCalendarOutline, IoLocationOutline, IoLockClosedOutline } from 'react-icons/io5'
-import "../../../../../assets/scss/pages/_deteilsemployee.scss"
 
 export default function DeteilsEmployee() {
     const navigate = useNavigate()

@@ -6,9 +6,16 @@ import { useState, useEffect } from "react";
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
 import VIP from "../../../../assets/icons/cup.svg"
+import ModalkaIncrease from "../../../../components/Modals/ModalkaInk";
+import ModalkaDecrease from "../../../../components/Modals/ModalkaDec";
+
+
 
 export default function InventoryManagmentListItem({ id, name, price, quantity, status, statusbox }) {
     const [isOpen, setIsOpen] = useState(false);
+    const [decModal, setDecModal] = useState(false)
+    const [inkModal, setInkModal] = useState(false)
+
 
     useEffect(() => {
         if (!isOpen) return;
@@ -22,6 +29,8 @@ export default function InventoryManagmentListItem({ id, name, price, quantity, 
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, [isOpen]);
 
+
+
     return (
         <div className="rentmanagmentlistitem">
             <p className="materialsmanagmentlistitem_id">{id}</p>
@@ -31,8 +40,18 @@ export default function InventoryManagmentListItem({ id, name, price, quantity, 
             <div className={statusbox}>{status}</div>
             <div className="materialsmanagmentlistitem_color"></div>
             <div className="employeemanagementlistitem_actions">
-                <div className="materialsmanagmentlistitem_plus">+</div>
-                <div className="materialsmanagmentlistitem_minus"></div>
+                <div onClick={() => setInkModal(true)} className="materialsmanagmentlistitem_plus">+</div>
+                {inkModal ? <ModalkaIncrease data={{
+                    title: "Предмет",
+                    item: "Красная нить",
+                    quanty: "4 шт"
+                }} setModal={setInkModal} /> : ""}
+                <div onClick={() => setDecModal(true)} className="materialsmanagmentlistitem_minus"></div>
+                {decModal ? <ModalkaDecrease data={{
+                    title: "Предмет",
+                    item: "Красная нить",
+                    quanty: "4 шт"
+                }} setModal={setDecModal} /> : ""}
                 <Link to={"/inventary/details/id"}>
                     <div className="employeemanagementlistitem_actions_watch" style={{ cursor: 'pointer' }}>
                         <VisibilityOutlinedIcon className="employeemanagementlistitem_watchicons" />

@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import '../../../../../assets/scss/pages/_rentadd.scss';
 import BackList from '../../../../../components/BackList';
 
 const RentAdd = () => {

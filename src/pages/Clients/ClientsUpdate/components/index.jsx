@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import '../../../../assets/scss/pages/_clientsupdate.scss'
 
 export default function ClientsUpdate() {
   const navigate = useNavigate()

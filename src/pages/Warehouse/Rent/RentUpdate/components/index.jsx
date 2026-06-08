@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import '../../../../../assets/scss/pages/_rentupdate.scss';
 import BackList from '../../../../../components/BackList';
 
 const RentUpdate = () => {
